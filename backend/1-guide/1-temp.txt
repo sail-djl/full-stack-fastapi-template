@@ -1,0 +1,13 @@
+cd E:\finance\full-stack-fastapi-template\backend
+
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+uv --version
+
+uv sync
+
+alembic upgrade head
+
+uv run python app/initial_data.py
+
+uv run fastapi run --reload app/main.py

@@ -1,0 +1,5 @@
+初始化： 
+检查：E:\finance\full-stack-fastapi-template\backend\app\backend_pre_start.py
+
+配置：app/core/config.py
+配置 ：E:\finance\full-stack-fastapi-template\.env
