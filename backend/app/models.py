@@ -1,4 +1,5 @@
 import uuid
+from datetime import datetime
 
 from pydantic import EmailStr
 from sqlmodel import Field, Relationship, SQLModel
@@ -113,22 +114,24 @@ class NewPassword(SQLModel):
     new_password: str = Field(min_length=8, max_length=128)
 
 
-# Menu models
-class MenuBase(SQLModel):
+# ============================================
+# Permission (权限/菜单) 相关模型 - 由 Menu 重构而来
+# ============================================
+class PermissionBase(SQLModel):
     key: str = Field(max_length=100)
     title: str = Field(max_length=200)
     url: str | None = Field(default=None, max_length=500)
-    parent_id: int | None = Field(default=None, foreign_key="menu.id")
+    parent_id: int | None = Field(default=None)  # 不使用外键约束
     icon: str | None = Field(default=None, max_length=100)
     sort_order: int = Field(default=0)
     is_active: bool = Field(default=True)
 
 
-class MenuCreate(MenuBase):
+class PermissionCreate(PermissionBase):
     pass
 
 
-class MenuUpdate(SQLModel):
+class PermissionUpdate(SQLModel):
     key: str | None = Field(default=None, max_length=100)
     title: str | None = Field(default=None, max_length=200)
     url: str | None = Field(default=None, max_length=500)
@@ -139,19 +142,80 @@ class MenuUpdate(SQLModel):
 
 
 # Database model
-class Menu(MenuBase, table=True):
-    __tablename__ = "menu"
+class Permission(PermissionBase, table=True):
+    __tablename__ = "permission"
     
     id: int = Field(primary_key=True)
 
 
 # Properties to return via API
-class MenuPublic(MenuBase):
+class PermissionPublic(PermissionBase):
     id: int
     parent_id: int | None = None
-    children: list["MenuPublic"] | None = None
+    children: list["PermissionPublic"] | None = None
 
 
-class MenusPublic(SQLModel):
-    data: list[MenuPublic]
+class PermissionsPublic(SQLModel):
+    data: list[PermissionPublic]
     count: int
+
+
+# ============================================
+# Role (角色) 相关模型
+# ============================================
+class RoleBase(SQLModel):
+    name: str = Field(unique=True, index=True, max_length=100)
+    code: str = Field(unique=True, index=True, max_length=50)
+    description: str | None = Field(default=None, max_length=500)
+    is_active: bool = Field(default=True)
+    sort_order: int = Field(default=0)
+
+
+class RoleCreate(RoleBase):
+    pass
+
+
+class RoleUpdate(SQLModel):
+    name: str | None = Field(default=None, max_length=100)
+    code: str | None = Field(default=None, max_length=50)
+    description: str | None = Field(default=None, max_length=500)
+    is_active: bool | None = Field(default=None)
+    sort_order: int | None = Field(default=None)
+
+
+class Role(RoleBase, table=True):
+    __tablename__ = "role"
+    
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow, sa_column_kwargs={"onupdate": datetime.utcnow})
+
+
+class RolePublic(RoleBase):
+    id: uuid.UUID
+    created_at: datetime
+    updated_at: datetime
+
+
+class RolesPublic(SQLModel):
+    data: list[RolePublic]
+    count: int
+
+
+# ============================================
+# 关联表模型
+# ============================================
+class UserRole(SQLModel, table=True):
+    __tablename__ = "user_role"
+    
+    user_id: uuid.UUID = Field(primary_key=True)
+    role_id: uuid.UUID = Field(primary_key=True)
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+
+class RolePermission(SQLModel, table=True):
+    __tablename__ = "role_permission"
+    
+    role_id: uuid.UUID = Field(primary_key=True)
+    permission_id: int = Field(primary_key=True)  # 改为 INTEGER 类型
+    created_at: datetime = Field(default_factory=datetime.utcnow)

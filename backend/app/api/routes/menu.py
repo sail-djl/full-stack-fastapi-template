@@ -5,142 +5,142 @@ from sqlmodel import func, select
 
 from app.api.deps import SessionDep
 from app.crud import (
-    create_menu,
-    delete_menu,
-    get_menu_by_id,
-    get_menu_by_key,
-    get_menu_tree,
-    update_menu,
+    create_permission,
+    delete_permission,
+    get_permission_by_id,
+    get_permission_by_key,
+    get_permission_tree,
+    update_permission,
 )
-from app.models import Menu, MenuCreate, MenuPublic, MenuUpdate, MenusPublic, Message
+from app.models import Permission, PermissionCreate, PermissionPublic, PermissionUpdate, PermissionsPublic, Message
 
 
-router = APIRouter(prefix="/menu", tags=["menu"])
+router = APIRouter(prefix="/permissions", tags=["permissions"])
 
 
-def build_menu_tree(menus: list[Menu]) -> list[MenuPublic]:
-    """将扁平菜单列表构建为树形结构"""
-    # 创建菜单字典，初始化 children 为空列表
-    menu_dict: dict[int, MenuPublic] = {}
-    for menu in menus:
-        menu_public = MenuPublic.model_validate(menu)
-        menu_public.children = []
-        menu_dict[menu.id] = menu_public
+def build_permission_tree(permissions: list[Permission]) -> list[PermissionPublic]:
+    """将扁平权限列表构建为树形结构"""
+    # 创建权限字典，初始化 children 为空列表
+    permission_dict: dict[int, PermissionPublic] = {}
+    for permission in permissions:
+        permission_public = PermissionPublic.model_validate(permission)
+        permission_public.children = []
+        permission_dict[permission.id] = permission_public
     
-    root_menus = []
+    root_permissions = []
     
     # 构建树形结构
-    for menu in menus:
-        menu_public = menu_dict[menu.id]
-        if menu.parent_id is None:
-            root_menus.append(menu_public)
+    for permission in permissions:
+        permission_public = permission_dict[permission.id]
+        if permission.parent_id is None:
+            root_permissions.append(permission_public)
         else:
-            parent = menu_dict.get(menu.parent_id)
+            parent = permission_dict.get(permission.parent_id)
             if parent and parent.children is not None:
-                parent.children.append(menu_public)
+                parent.children.append(permission_public)
     
-    # 对每个菜单的子菜单进行排序
-    def sort_children(menu: MenuPublic):
-        if menu.children:
-            menu.children.sort(key=lambda x: (x.sort_order, x.id))
-            for child in menu.children:
+    # 对每个权限的子权限进行排序
+    def sort_children(permission: PermissionPublic):
+        if permission.children:
+            permission.children.sort(key=lambda x: (x.sort_order, x.id))
+            for child in permission.children:
                 sort_children(child)
         else:
-            # 如果没有子菜单，设置为 None（而不是空列表）
-            menu.children = None
+            # 如果没有子权限，设置为 None（而不是空列表）
+            permission.children = None
     
-    for menu in root_menus:
-        sort_children(menu)
+    for permission in root_permissions:
+        sort_children(permission)
     
-    root_menus.sort(key=lambda x: (x.sort_order, x.id))
-    return root_menus
+    root_permissions.sort(key=lambda x: (x.sort_order, x.id))
+    return root_permissions
 
 
-@router.get("/tree", response_model=list[MenuPublic])
-def get_menu_tree_api(session: SessionDep) -> Any:
+@router.get("/tree", response_model=list[PermissionPublic])
+def get_permission_tree_api(session: SessionDep) -> Any:
     """
-    获取菜单树（只返回启用的菜单，已构建为树形结构）
+    获取权限树（只返回启用的权限，已构建为树形结构）
     """
-    menus = get_menu_tree(session=session)
-    menu_tree = build_menu_tree(menus)
-    return menu_tree
+    permissions = get_permission_tree(session=session)
+    permission_tree = build_permission_tree(permissions)
+    return permission_tree
 
 
-@router.get("/", response_model=MenusPublic)
-def read_menus(
+@router.get("/", response_model=PermissionsPublic)
+def read_permissions(
     session: SessionDep, skip: int = 0, limit: int = 100
 ) -> Any:
     """
-    获取所有菜单（扁平列表，用于管理界面）
+    获取所有权限（扁平列表，用于管理界面）
     """
-    count_statement = select(func.count()).select_from(Menu)
+    count_statement = select(func.count()).select_from(Permission)
     count = session.exec(count_statement).one()
-    statement = select(Menu).offset(skip).limit(limit).order_by(Menu.sort_order, Menu.id)
-    menus = session.exec(statement).all()
-    return MenusPublic(data=[MenuPublic.model_validate(menu) for menu in menus], count=count)
+    statement = select(Permission).offset(skip).limit(limit).order_by(Permission.sort_order, Permission.id)
+    permissions = session.exec(statement).all()
+    return PermissionsPublic(data=[PermissionPublic.model_validate(p) for p in permissions], count=count)
 
 
-@router.get("/{id}", response_model=MenuPublic)
-def read_menu(session: SessionDep, id: int) -> Any:
+@router.get("/{id}", response_model=PermissionPublic)
+def read_permission(session: SessionDep, id: int) -> Any:
     """
-    根据ID获取菜单
+    根据ID获取权限
     """
-    menu = get_menu_by_id(session=session, menu_id=id)
-    if not menu:
-        raise HTTPException(status_code=404, detail="Menu not found")
-    return MenuPublic.model_validate(menu)
+    permission = get_permission_by_id(session=session, permission_id=id)
+    if not permission:
+        raise HTTPException(status_code=404, detail="Permission not found")
+    return PermissionPublic.model_validate(permission)
 
 
-@router.post("/", response_model=MenuPublic)
-def create_menu_api(
-    *, session: SessionDep, menu_in: MenuCreate
+@router.post("/", response_model=PermissionPublic)
+def create_permission_api(
+    *, session: SessionDep, permission_in: PermissionCreate
 ) -> Any:
     """
-    创建新菜单
+    创建新权限
     """
     # 检查 key 是否已存在
-    existing_menu = get_menu_by_key(session=session, key=menu_in.key)
-    if existing_menu:
-        raise HTTPException(status_code=400, detail="Menu with this key already exists")
+    existing_permission = get_permission_by_key(session=session, key=permission_in.key)
+    if existing_permission:
+        raise HTTPException(status_code=400, detail="Permission with this key already exists")
     
-    menu = create_menu(session=session, menu_in=menu_in)
-    return MenuPublic.model_validate(menu)
+    permission = create_permission(session=session, permission_in=permission_in)
+    return PermissionPublic.model_validate(permission)
 
 
-@router.put("/{id}", response_model=MenuPublic)
-def update_menu_api(
+@router.put("/{id}", response_model=PermissionPublic)
+def update_permission_api(
     *,
     session: SessionDep,
     id: int,
-    menu_in: MenuUpdate,
+    permission_in: PermissionUpdate,
 ) -> Any:
     """
-    更新菜单
+    更新权限
     """
-    menu = get_menu_by_id(session=session, menu_id=id)
-    if not menu:
-        raise HTTPException(status_code=404, detail="Menu not found")
+    permission = get_permission_by_id(session=session, permission_id=id)
+    if not permission:
+        raise HTTPException(status_code=404, detail="Permission not found")
     
     # 如果更新 key，检查新 key 是否已存在
-    if menu_in.key and menu_in.key != menu.key:
-        existing_menu = get_menu_by_key(session=session, key=menu_in.key)
-        if existing_menu:
-            raise HTTPException(status_code=400, detail="Menu with this key already exists")
+    if permission_in.key and permission_in.key != permission.key:
+        existing_permission = get_permission_by_key(session=session, key=permission_in.key)
+        if existing_permission:
+            raise HTTPException(status_code=400, detail="Permission with this key already exists")
     
-    menu = update_menu(session=session, db_menu=menu, menu_in=menu_in)
-    return MenuPublic.model_validate(menu)
+    permission = update_permission(session=session, db_permission=permission, permission_in=permission_in)
+    return PermissionPublic.model_validate(permission)
 
 
 @router.delete("/{id}")
-def delete_menu_api(
+def delete_permission_api(
     session: SessionDep, id: int
 ) -> Message:
     """
-    删除菜单
+    删除权限
     """
-    menu = get_menu_by_id(session=session, menu_id=id)
-    if not menu:
-        raise HTTPException(status_code=404, detail="Menu not found")
-    delete_menu(session=session, menu_id=id)
-    return Message(message="Menu deleted successfully")
+    permission = get_permission_by_id(session=session, permission_id=id)
+    if not permission:
+        raise HTTPException(status_code=404, detail="Permission not found")
+    delete_permission(session=session, permission_id=id)
+    return Message(message="Permission deleted successfully")
 

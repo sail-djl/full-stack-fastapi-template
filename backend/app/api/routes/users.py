@@ -15,11 +15,14 @@ from app.core.security import get_password_hash, verify_password
 from app.models import (
     Item,
     Message,
+    Role,
+    RolePublic,
     UpdatePassword,
     User,
     UserCreate,
     UserPublic,
     UserRegister,
+    UserRole,
     UsersPublic,
     UserUpdate,
     UserUpdateMe,
@@ -224,3 +227,98 @@ def delete_user(
     session.delete(user)
     session.commit()
     return Message(message="User deleted successfully")
+
+
+# ============================================
+# User-Role (用户角色关联) 路由
+# ============================================
+@router.get("/{user_id}/roles", response_model=list[RolePublic])
+def get_user_roles(user_id: uuid.UUID, session: SessionDep) -> Any:
+    """
+    获取用户的所有角色
+    """
+    user = session.get(User, user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    roles = crud.get_user_roles(session=session, user_id=user_id)
+    return [RolePublic.model_validate(role) for role in roles]
+
+
+@router.post(
+    "/{user_id}/roles",
+    dependencies=[Depends(get_current_active_superuser)],
+    response_model=Message,
+)
+def assign_roles_to_user(
+    user_id: uuid.UUID,
+    role_ids: list[uuid.UUID],
+    session: SessionDep,
+) -> Any:
+    """
+    为用户分配角色（替换所有现有角色）
+    """
+    user = session.get(User, user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    # 验证所有角色是否存在
+    for role_id in role_ids:
+        role = crud.get_role_by_id(session=session, role_id=role_id)
+        if not role:
+            raise HTTPException(status_code=404, detail=f"Role {role_id} not found")
+    
+    crud.set_user_roles(session=session, user_id=user_id, role_ids=role_ids)
+    return Message(message="Roles assigned successfully")
+
+
+@router.post(
+    "/{user_id}/roles/{role_id}",
+    dependencies=[Depends(get_current_active_superuser)],
+    response_model=Message,
+)
+def assign_role_to_user(
+    user_id: uuid.UUID,
+    role_id: uuid.UUID,
+    session: SessionDep,
+) -> Any:
+    """
+    为用户添加单个角色
+    """
+    user = session.get(User, user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    role = crud.get_role_by_id(session=session, role_id=role_id)
+    if not role:
+        raise HTTPException(status_code=404, detail="Role not found")
+    
+    # 检查是否已存在
+    statement = select(UserRole).where(UserRole.user_id == user_id, UserRole.role_id == role_id)
+    existing = session.exec(statement).first()
+    if existing:
+        raise HTTPException(status_code=400, detail="Role already assigned to user")
+    
+    crud.assign_role_to_user(session=session, user_id=user_id, role_id=role_id)
+    return Message(message="Role assigned successfully")
+
+
+@router.delete(
+    "/{user_id}/roles/{role_id}",
+    dependencies=[Depends(get_current_active_superuser)],
+    response_model=Message,
+)
+def remove_role_from_user(
+    user_id: uuid.UUID,
+    role_id: uuid.UUID,
+    session: SessionDep,
+) -> Any:
+    """
+    从用户移除角色
+    """
+    user = session.get(User, user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    crud.remove_role_from_user(session=session, user_id=user_id, role_id=role_id)
+    return Message(message="Role removed successfully")
