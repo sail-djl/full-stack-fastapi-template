@@ -111,3 +111,47 @@ class TokenPayload(SQLModel):
 class NewPassword(SQLModel):
     token: str
     new_password: str = Field(min_length=8, max_length=128)
+
+
+# Menu models
+class MenuBase(SQLModel):
+    key: str = Field(max_length=100)
+    title: str = Field(max_length=200)
+    url: str | None = Field(default=None, max_length=500)
+    parent_id: int | None = Field(default=None, foreign_key="menu.id")
+    icon: str | None = Field(default=None, max_length=100)
+    sort_order: int = Field(default=0)
+    is_active: bool = Field(default=True)
+
+
+class MenuCreate(MenuBase):
+    pass
+
+
+class MenuUpdate(SQLModel):
+    key: str | None = Field(default=None, max_length=100)
+    title: str | None = Field(default=None, max_length=200)
+    url: str | None = Field(default=None, max_length=500)
+    parent_id: int | None = Field(default=None)
+    icon: str | None = Field(default=None, max_length=100)
+    sort_order: int | None = Field(default=None)
+    is_active: bool | None = Field(default=None)
+
+
+# Database model
+class Menu(MenuBase, table=True):
+    __tablename__ = "menu"
+    
+    id: int = Field(primary_key=True)
+
+
+# Properties to return via API
+class MenuPublic(MenuBase):
+    id: int
+    parent_id: int | None = None
+    children: list["MenuPublic"] | None = None
+
+
+class MenusPublic(SQLModel):
+    data: list[MenuPublic]
+    count: int

@@ -4,7 +4,7 @@ from typing import Any
 from sqlmodel import Session, select
 
 from app.core.security import get_password_hash, verify_password
-from app.models import Item, ItemCreate, User, UserCreate, UserUpdate
+from app.models import Item, ItemCreate, Menu, MenuCreate, MenuUpdate, User, UserCreate, UserUpdate
 
 
 def create_user(*, session: Session, user_create: UserCreate) -> User:
@@ -52,3 +52,51 @@ def create_item(*, session: Session, item_in: ItemCreate, owner_id: uuid.UUID) -
     session.commit()
     session.refresh(db_item)
     return db_item
+
+
+# Menu CRUD functions
+def get_menu_tree(*, session: Session) -> list[Menu]:
+    """获取所有启用的菜单，按层级和排序返回"""
+    statement = select(Menu).where(Menu.is_active == True).order_by(
+        Menu.parent_id.asc().nullsfirst(), Menu.sort_order.asc(), Menu.id.asc()
+    )
+    menus = session.exec(statement).all()
+    return list(menus)
+
+
+def get_menu_by_id(*, session: Session, menu_id: int) -> Menu | None:
+    """根据ID获取菜单"""
+    return session.get(Menu, menu_id)
+
+
+def get_menu_by_key(*, session: Session, key: str) -> Menu | None:
+    """根据key获取菜单"""
+    statement = select(Menu).where(Menu.key == key)
+    return session.exec(statement).first()
+
+
+def create_menu(*, session: Session, menu_in: MenuCreate) -> Menu:
+    """创建菜单"""
+    db_menu = Menu.model_validate(menu_in)
+    session.add(db_menu)
+    session.commit()
+    session.refresh(db_menu)
+    return db_menu
+
+
+def update_menu(*, session: Session, db_menu: Menu, menu_in: MenuUpdate) -> Menu:
+    """更新菜单"""
+    menu_data = menu_in.model_dump(exclude_unset=True)
+    db_menu.sqlmodel_update(menu_data)
+    session.add(db_menu)
+    session.commit()
+    session.refresh(db_menu)
+    return db_menu
+
+
+def delete_menu(*, session: Session, menu_id: int) -> None:
+    """删除菜单（级联删除子菜单）"""
+    menu = session.get(Menu, menu_id)
+    if menu:
+        session.delete(menu)
+        session.commit()
