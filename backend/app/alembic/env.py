@@ -18,8 +18,18 @@ fileConfig(config.config_file_name)
 # target_metadata = mymodel.Base.metadata
 # target_metadata = None
 
-from app.models import SQLModel  # noqa
+from sqlmodel import SQLModel  # noqa
 from app.core.config import settings # noqa
+
+# Import all models to register them with SQLModel
+from app.models import (  # noqa
+    User,
+    Item,
+    Permission,
+    Role,
+    UserRole,
+    RolePermission,
+)
 
 target_metadata = SQLModel.metadata
 
