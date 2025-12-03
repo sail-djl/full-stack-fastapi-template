@@ -1,23 +1,18 @@
 import uuid
 from typing import Any
 
-from fastapi import APIRouter, Depends, HTTPException
-from sqlmodel import func, select
+from fastapi import APIRouter, Depends
 
-from app import crud
-from app.api.deps import CurrentUser, SessionDep, get_current_active_superuser
+from app.api.deps import SessionDep, get_current_active_superuser
 from app.models import (
     Message,
-    Permission,
     PermissionPublic,
-    Role,
     RoleCreate,
-    RolePermission,
     RolePublic,
     RolesPublic,
     RoleUpdate,
-    UserRole,
 )
+from app.services.role_service import RoleService
 
 router = APIRouter(prefix="/roles", tags=["roles"])
 
@@ -30,11 +25,7 @@ def read_roles(session: SessionDep, skip: int = 0, limit: int = 100) -> Any:
     """
     获取所有角色
     """
-    count_statement = select(func.count()).select_from(Role)
-    count = session.exec(count_statement).one()
-    
-    roles = crud.get_roles(session=session, skip=skip, limit=limit)
-    
+    roles, count = RoleService.get_roles(session=session, skip=skip, limit=limit)
     return RolesPublic(data=[RolePublic.model_validate(role) for role in roles], count=count)
 
 
@@ -43,9 +34,7 @@ def read_role(role_id: uuid.UUID, session: SessionDep) -> Any:
     """
     根据ID获取角色
     """
-    role = crud.get_role_by_id(session=session, role_id=role_id)
-    if not role:
-        raise HTTPException(status_code=404, detail="Role not found")
+    role = RoleService.get_role_by_id(session=session, role_id=role_id)
     return RolePublic.model_validate(role)
 
 
@@ -54,12 +43,7 @@ def create_role_api(*, session: SessionDep, role_in: RoleCreate) -> Any:
     """
     创建新角色
     """
-    # 检查 code 是否已存在
-    existing_role = crud.get_role_by_code(session=session, code=role_in.code)
-    if existing_role:
-        raise HTTPException(status_code=400, detail="Role with this code already exists")
-    
-    role = crud.create_role(session=session, role_in=role_in)
+    role = RoleService.create_role(session=session, role_in=role_in)
     return RolePublic.model_validate(role)
 
 
@@ -77,17 +61,7 @@ def update_role_api(
     """
     更新角色
     """
-    role = crud.get_role_by_id(session=session, role_id=role_id)
-    if not role:
-        raise HTTPException(status_code=404, detail="Role not found")
-    
-    # 如果更新 code，检查新 code 是否已存在
-    if role_in.code and role_in.code != role.code:
-        existing_role = crud.get_role_by_code(session=session, code=role_in.code)
-        if existing_role:
-            raise HTTPException(status_code=400, detail="Role with this code already exists")
-    
-    role = crud.update_role(session=session, db_role=role, role_in=role_in)
+    role = RoleService.update_role(session=session, role_id=role_id, role_in=role_in)
     return RolePublic.model_validate(role)
 
 
@@ -96,11 +70,7 @@ def delete_role_api(session: SessionDep, role_id: uuid.UUID) -> Message:
     """
     删除角色
     """
-    role = crud.get_role_by_id(session=session, role_id=role_id)
-    if not role:
-        raise HTTPException(status_code=404, detail="Role not found")
-    
-    crud.delete_role(session=session, role_id=role_id)
+    RoleService.delete_role(session=session, role_id=role_id)
     return Message(message="Role deleted successfully")
 
 
@@ -112,11 +82,7 @@ def get_role_permissions(role_id: uuid.UUID, session: SessionDep) -> Any:
     """
     获取角色的所有权限
     """
-    role = crud.get_role_by_id(session=session, role_id=role_id)
-    if not role:
-        raise HTTPException(status_code=404, detail="Role not found")
-    
-    permissions = crud.get_role_permissions(session=session, role_id=role_id)
+    permissions = RoleService.get_role_permissions(session=session, role_id=role_id)
     return [PermissionPublic.model_validate(p) for p in permissions]
 
 
@@ -127,23 +93,15 @@ def get_role_permissions(role_id: uuid.UUID, session: SessionDep) -> Any:
 )
 def assign_permissions_to_role(
     role_id: uuid.UUID,
-    permission_ids: list[int],  # 改为 int 类型
+    permission_ids: list[int],
     session: SessionDep,
 ) -> Any:
     """
     为角色分配权限（替换所有现有权限）
     """
-    role = crud.get_role_by_id(session=session, role_id=role_id)
-    if not role:
-        raise HTTPException(status_code=404, detail="Role not found")
-    
-    # 验证所有权限是否存在
-    for permission_id in permission_ids:
-        permission = crud.get_permission_by_id(session=session, permission_id=permission_id)
-        if not permission:
-            raise HTTPException(status_code=404, detail=f"Permission {permission_id} not found")
-    
-    crud.set_role_permissions(session=session, role_id=role_id, permission_ids=permission_ids)
+    RoleService.assign_permissions_to_role(
+        session=session, role_id=role_id, permission_ids=permission_ids
+    )
     return Message(message="Permissions assigned successfully")
 
 
@@ -154,29 +112,15 @@ def assign_permissions_to_role(
 )
 def assign_permission_to_role(
     role_id: uuid.UUID,
-    permission_id: int,  # 改为 int 类型
+    permission_id: int,
     session: SessionDep,
 ) -> Any:
     """
     为角色添加单个权限
     """
-    role = crud.get_role_by_id(session=session, role_id=role_id)
-    if not role:
-        raise HTTPException(status_code=404, detail="Role not found")
-    
-    permission = crud.get_permission_by_id(session=session, permission_id=permission_id)
-    if not permission:
-        raise HTTPException(status_code=404, detail="Permission not found")
-    
-    # 检查是否已存在
-    statement = select(RolePermission).where(
-        RolePermission.role_id == role_id, RolePermission.permission_id == permission_id
+    RoleService.assign_permission_to_role(
+        session=session, role_id=role_id, permission_id=permission_id
     )
-    existing = session.exec(statement).first()
-    if existing:
-        raise HTTPException(status_code=400, detail="Permission already assigned to role")
-    
-    crud.assign_permission_to_role(session=session, role_id=role_id, permission_id=permission_id)
     return Message(message="Permission assigned successfully")
 
 
@@ -187,16 +131,13 @@ def assign_permission_to_role(
 )
 def remove_permission_from_role(
     role_id: uuid.UUID,
-    permission_id: int,  # 改为 int 类型
+    permission_id: int,
     session: SessionDep,
 ) -> Any:
     """
     从角色移除权限
     """
-    role = crud.get_role_by_id(session=session, role_id=role_id)
-    if not role:
-        raise HTTPException(status_code=404, detail="Role not found")
-    
-    crud.remove_permission_from_role(session=session, role_id=role_id, permission_id=permission_id)
+    RoleService.remove_permission_from_role(
+        session=session, role_id=role_id, permission_id=permission_id
+    )
     return Message(message="Permission removed successfully")
-
