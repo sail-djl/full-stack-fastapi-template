@@ -41,6 +41,19 @@ from app.models.role import (
     RoleUpdate,
     RolesPublic,
 )
+from app.models.polarization import (
+    Polarization,
+    PolarizationBase,
+    PolarizationCreate,
+    PolarizationPublic,
+    PolarizationUpdate,
+    PolarizationsPublic,
+    Deviation,
+    DeviationBase,
+    DeviationCreate,
+    DeviationPublic,
+    DeviationsPublic,
+)
 from app.models.relationships import (
     UserRole,
     RolePermission,
@@ -79,6 +92,19 @@ __all__ = [
     "RolePublic",
     "RoleUpdate",
     "RolesPublic",
+    # Polarization
+    "Polarization",
+    "PolarizationBase",
+    "PolarizationCreate",
+    "PolarizationPublic",
+    "PolarizationUpdate",
+    "PolarizationsPublic",
+    # Deviation
+    "Deviation",
+    "DeviationBase",
+    "DeviationCreate",
+    "DeviationPublic",
+    "DeviationsPublic",
     # Relationships
     "UserRole",
     "RolePermission",
