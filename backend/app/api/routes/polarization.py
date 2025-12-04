@@ -61,7 +61,48 @@ def get_deviation(
         fund2_code=fund2Code,
         time_range=timeRange,
     )
+    # 调试：检查返回的数据格式
+    if deviations and len(deviations) > 0:
+        import logging
+        logger = logging.getLogger(__name__)
+        sample = deviations[0]
+        logger.info(f"🔍 Backend Deviation: sample data keys: {sample.keys()}")
+        logger.info(f"🔍 Backend Deviation: sample data: {sample}")
+        logger.info(f"🔍 Backend Deviation: etf1PctChg={sample.get('etf1PctChg')}, type={type(sample.get('etf1PctChg'))}")
+        logger.info(f"🔍 Backend Deviation: etf2PctChg={sample.get('etf2PctChg')}, type={type(sample.get('etf2PctChg'))}")
     return deviations
+
+
+# ============================================
+# Accumulative Data (累加数据) 路由 - 从 fund.fund_nav 计算
+# ============================================
+@router.get("/accumulative")
+def get_accumulative(
+    session: SessionDep,
+    fund1Code: str = Query(..., alias="fund1Code", description="基金1代码"),
+    fund2Code: str = Query(..., alias="fund2Code", description="基金2代码"),
+    timeRange: int = Query(None, alias="timeRange", description="时间范围（天数）"),
+    startDate: str = Query(None, alias="startDate", description="开始日期（YYYY-MM-DD）"),
+    endDate: str = Query(None, alias="endDate", description="结束日期（YYYY-MM-DD）"),
+) -> Any:
+    """
+    获取累加数据（从 fund.fund_nav 计算）
+    稳定线：每日 (pct_chg1 + pct_chg2) / 2 的累加
+    收益线：每日 (稳定线 * 0.8 + MAX(pct_chg1, pct_chg2) * 0.1) 的累加
+    数据来源: fund.fund_nav
+    支持两种查询方式：
+    1. 使用 timeRange（天数）
+    2. 使用 startDate 和 endDate（日期范围）
+    """
+    accumulative_data = FundService.get_accumulative_data(
+        session=session,
+        fund1_code=fund1Code,
+        fund2_code=fund2Code,
+        time_range=timeRange,
+        start_date=startDate,
+        end_date=endDate,
+    )
+    return accumulative_data
 
 
 @router.get("/deviation-summary")

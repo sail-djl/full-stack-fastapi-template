@@ -70,39 +70,36 @@ class FundService:
     ) -> list[dict[str, Any]]:
         """
         获取偏差数据（从 fund.fund_nav 计算）
-        计算两个基金的净值比值作为偏差值
+        计算两个基金的涨跌幅差值作为偏差值：deviation = fund1.pct_chg - fund2.pct_chg
         """
         # 计算起始日期
         start_date = date.today() - timedelta(days=time_range)
         
         sql = text("""
             WITH fund1_data AS (
-                SELECT nav_date, unit_nav as price
+                SELECT nav_date, pct_chg
                 FROM fund.fund_nav
                 WHERE ts_code = :fund1_code
                     AND nav_date >= :start_date
-                    AND unit_nav IS NOT NULL
+                    AND pct_chg IS NOT NULL
                 ORDER BY nav_date
             ),
             fund2_data AS (
-                SELECT nav_date, unit_nav as price
+                SELECT nav_date, pct_chg
                 FROM fund.fund_nav
                 WHERE ts_code = :fund2_code
                     AND nav_date >= :start_date
-                    AND unit_nav IS NOT NULL
+                    AND pct_chg IS NOT NULL
                 ORDER BY nav_date
             )
             SELECT 
                 COALESCE(f1.nav_date, f2.nav_date)::text as date,
-                CASE 
-                    WHEN f2.price > 0 THEN (f1.price / f2.price)
-                    ELSE NULL
-                END as deviation,
-                COALESCE(f1.price, 0) as etf1Price,
-                COALESCE(f2.price, 0) as etf2Price
+                COALESCE(f1.pct_chg, 0) - COALESCE(f2.pct_chg, 0) as deviation,
+                COALESCE(f1.pct_chg, 0) as etf1PctChg,
+                COALESCE(f2.pct_chg, 0) as etf2PctChg
             FROM fund1_data f1
             FULL OUTER JOIN fund2_data f2 ON f1.nav_date = f2.nav_date
-            WHERE f1.price IS NOT NULL AND f2.price IS NOT NULL
+            WHERE f1.pct_chg IS NOT NULL AND f2.pct_chg IS NOT NULL
             ORDER BY COALESCE(f1.nav_date, f2.nav_date)
         """).bindparams(
             fund1_code=fund1_code,
@@ -111,7 +108,18 @@ class FundService:
         )
         
         result = session.execute(sql)
-        return [dict(row._mapping) for row in result]
+        deviation_list = []
+        for row in result:
+            row_dict = dict(row._mapping)
+            # 处理字段名大小写问题，确保返回驼峰命名
+            deviation_dict = {
+                'date': row_dict.get('date') or row_dict.get('DATE'),
+                'deviation': float(row_dict.get('deviation') or row_dict.get('DEVIATION') or 0),
+                'etf1PctChg': float(row_dict.get('etf1PctChg') or row_dict.get('etf1pctchg') or row_dict.get('ETF1PCTCHG') or 0),
+                'etf2PctChg': float(row_dict.get('etf2PctChg') or row_dict.get('etf2pctchg') or row_dict.get('ETF2PCTCHG') or 0),
+            }
+            deviation_list.append(deviation_dict)
+        return deviation_list
 
     @staticmethod
     def get_deviation_summary(
@@ -121,19 +129,20 @@ class FundService:
     ) -> dict[str, Any]:
         """
         获取偏差摘要（今日、周、月、年平均偏差）
+        偏差 = fund1.pct_chg - fund2.pct_chg（涨跌幅差值）
         """
         sql = text("""
             WITH deviation_calc AS (
                 SELECT 
                     f1.nav_date,
-                    (f1.unit_nav / NULLIF(f2.unit_nav, 0)) as deviation
+                    (f1.pct_chg - f2.pct_chg) as deviation
                 FROM fund.fund_nav f1
                 JOIN fund.fund_nav f2 ON f1.nav_date = f2.nav_date
                 WHERE f1.ts_code = :fund1_code
                     AND f2.ts_code = :fund2_code
                     AND f1.nav_date >= CURRENT_DATE - INTERVAL '365 days'
-                    AND f1.unit_nav IS NOT NULL
-                    AND f2.unit_nav IS NOT NULL
+                    AND f1.pct_chg IS NOT NULL
+                    AND f2.pct_chg IS NOT NULL
                 ORDER BY f1.nav_date
             ),
             latest_date AS (
@@ -183,20 +192,24 @@ class FundService:
     ) -> dict[str, Any]:
         """
         获取偏振度数据（从 fund.fund_nav 计算）
+        偏振度 = |fund1.pct_chg - fund2.pct_chg| （大的数减去小的数的绝对值）
         计算当前偏振度和3年平均偏振度
         """
         sql = text("""
             WITH polarization_calc AS (
                 SELECT 
                     f1.nav_date,
-                    (f1.unit_nav / NULLIF(f2.unit_nav, 0)) as polarization
+                    CASE 
+                        WHEN f1.pct_chg >= f2.pct_chg THEN f1.pct_chg - f2.pct_chg
+                        ELSE f2.pct_chg - f1.pct_chg
+                    END as polarization
                 FROM fund.fund_nav f1
                 JOIN fund.fund_nav f2 ON f1.nav_date = f2.nav_date
                 WHERE f1.ts_code = :fund1_code
                     AND f2.ts_code = :fund2_code
                     AND f1.nav_date >= CURRENT_DATE - INTERVAL '3 years'
-                    AND f1.unit_nav IS NOT NULL
-                    AND f2.unit_nav IS NOT NULL
+                    AND f1.pct_chg IS NOT NULL
+                    AND f2.pct_chg IS NOT NULL
                 ORDER BY f1.nav_date DESC
             ),
             current_polar AS (
@@ -255,4 +268,81 @@ class FundService:
             'status': 'moderate',
             'trend': 'stable',
         }
+
+    @staticmethod
+    def get_accumulative_data(
+        session: Session,
+        fund1_code: str,
+        fund2_code: str,
+        time_range: int | None = None,
+        start_date: str | None = None,
+        end_date: str | None = None
+    ) -> list[dict[str, Any]]:
+        """
+        获取累加数据（从 fund.fund_nav 计算）
+        稳定线：每日 (pct_chg1 + pct_chg2) / 2 的累加
+        收益线：每日 (稳定线 * 0.8 + MAX(pct_chg1, pct_chg2) * 0.1) 的累加
+        
+        支持两种查询方式：
+        1. 使用 time_range（天数）
+        2. 使用 start_date 和 end_date（日期范围，格式：YYYY-MM-DD）
+        """
+        # 确定查询的日期范围
+        if start_date and end_date:
+            # 使用自定义日期范围
+            query_start_date = date.fromisoformat(start_date)
+            query_end_date = date.fromisoformat(end_date)
+        elif time_range:
+            # 使用固定时间范围
+            query_end_date = date.today()
+            query_start_date = query_end_date - timedelta(days=time_range)
+        else:
+            # 默认使用1年
+            query_end_date = date.today()
+            query_start_date = query_end_date - timedelta(days=365)
+        
+        sql = text("""
+            SELECT 
+                f1.nav_date::text as date,
+                f1.pct_chg as pct_chg1,
+                f2.pct_chg as pct_chg2,
+                (f1.pct_chg + f2.pct_chg) / 2.0 as stable_value,
+                ((f1.pct_chg + f2.pct_chg) / 2.0 * 0.8) + (GREATEST(f1.pct_chg, f2.pct_chg) * 0.1) as profit_value
+            FROM fund.fund_nav f1
+            JOIN fund.fund_nav f2 ON f1.nav_date = f2.nav_date
+            WHERE f1.ts_code = :fund1_code
+                AND f2.ts_code = :fund2_code
+                AND f1.nav_date >= :start_date
+                AND f1.nav_date <= :end_date
+                AND f1.pct_chg IS NOT NULL
+                AND f2.pct_chg IS NOT NULL
+            ORDER BY f1.nav_date
+        """).bindparams(
+            fund1_code=fund1_code,
+            fund2_code=fund2_code,
+            start_date=query_start_date,
+            end_date=query_end_date
+        )
+        
+        result = session.execute(sql)
+        data_list = []
+        stable_accumulative = 0.0
+        profit_accumulative = 0.0
+        
+        for row in result:
+            row_dict = dict(row._mapping)
+            stable_value = float(row_dict.get('stable_value', 0) or 0)
+            profit_value = float(row_dict.get('profit_value', 0) or 0)
+            
+            # 累加计算
+            stable_accumulative += stable_value
+            profit_accumulative += profit_value
+            
+            data_list.append({
+                'date': row_dict.get('date'),
+                'stableLine': round(stable_accumulative, 4),
+                'profitLine': round(profit_accumulative, 4),
+            })
+        
+        return data_list
 
