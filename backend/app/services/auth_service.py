@@ -118,3 +118,5 @@ class AuthService:
 
         return email_data.html_content, email_data.subject
 
+
+

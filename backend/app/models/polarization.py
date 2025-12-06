@@ -81,3 +81,5 @@ class DeviationsPublic(SQLModel):
     data: list[DeviationPublic]
     count: int
 
+
+
