@@ -1,3 +1,4 @@
+import os
 import secrets
 import warnings
 from typing import Annotated, Any, Literal
@@ -23,10 +24,50 @@ def parse_cors(v: Any) -> list[str] | str:
     raise ValueError(v)
 
 
+def get_env_files() -> list[str]:
+    """
+    根据 ENV_PROFILE 环境变量加载对应的配置文件
+    类似 Spring Boot 的 spring.profiles.active
+    
+    优先级：
+    1. .env.{profile} (如果 ENV_PROFILE 存在，会覆盖基础配置)
+    2. .env (基础配置)
+    
+    示例：
+    - ENV_PROFILE=local -> 加载 .env.local 和 .env
+    - ENV_PROFILE=staging -> 加载 .env.staging 和 .env
+    - ENV_PROFILE=production -> 加载 .env.production 和 .env
+    """
+    # 获取 api 目录（backend 的上一级）
+    # __file__: backend/app/core/config.py
+    # backend_dir: backend
+    backend_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    # api_dir: api (backend 的父目录)
+    api_dir = os.path.dirname(backend_dir)
+    
+    env_files = []
+    profile = os.getenv("ENV_PROFILE") or os.getenv("PROFILE")
+    
+    # 先加载基础配置
+    base_env = os.path.join(api_dir, ".env")
+    if os.path.exists(base_env):
+        env_files.append(base_env)
+    
+    # 再加载 profile 特定配置（会覆盖基础配置）
+    if profile:
+        profile_env = os.path.join(api_dir, f".env.{profile}")
+        if os.path.exists(profile_env):
+            env_files.append(profile_env)
+        else:
+            warnings.warn(f"Profile file not found: {profile_env}", stacklevel=1)
+    
+    return env_files
+
+
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        # Use top level .env file (one level above ./backend/)
-        env_file="../.env",
+        # 动态加载环境文件
+        env_file=get_env_files(),
         env_ignore_empty=True,
         extra="ignore",
     )
