@@ -33,10 +33,15 @@ def get_env_files() -> list[str]:
     1. .env.{profile} (如果 ENV_PROFILE 存在，会覆盖基础配置)
     2. .env (基础配置)
     
+    特殊处理：
+    - 如果存在 .env 文件且没有设置 ENV_PROFILE，直接使用 .env（适用于测试分支）
+    - 如果设置了 ENV_PROFILE，按原逻辑加载 .env 和 .env.{profile}
+    
     示例：
     - ENV_PROFILE=local -> 加载 .env.local 和 .env
     - ENV_PROFILE=staging -> 加载 .env.staging 和 .env
     - ENV_PROFILE=production -> 加载 .env.production 和 .env
+    - 无 ENV_PROFILE 且存在 .env -> 直接使用 .env（测试分支）
     """
     # 获取 api 目录（backend 的上一级）
     # __file__: backend/app/core/config.py
@@ -52,6 +57,11 @@ def get_env_files() -> list[str]:
     base_env = os.path.join(api_dir, ".env")
     if os.path.exists(base_env):
         env_files.append(base_env)
+    
+    # 如果没有设置 ENV_PROFILE 且 .env 文件存在，直接使用 .env（适用于测试分支）
+    if not profile and os.path.exists(base_env):
+        # 直接返回 .env 文件，不加载 profile 特定配置
+        return env_files
     
     # 再加载 profile 特定配置（会覆盖基础配置）
     if profile:
