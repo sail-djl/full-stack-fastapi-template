@@ -57,10 +57,15 @@ def get_env_files() -> list[str]:
     base_env = os.path.join(api_dir, ".env")
     if os.path.exists(base_env):
         env_files.append(base_env)
+        # 调试输出（仅在非生产环境）
+        if os.getenv("ENVIRONMENT", "").lower() != "production":
+            print(f"[Config] 加载基础配置文件: {base_env}")
     
     # 如果没有设置 ENV_PROFILE 且 .env 文件存在，直接使用 .env（适用于测试分支）
     if not profile and os.path.exists(base_env):
         # 直接返回 .env 文件，不加载 profile 特定配置
+        if os.getenv("ENVIRONMENT", "").lower() != "production":
+            print(f"[Config] 测试分支模式：直接使用 .env 文件，不加载 profile 配置")
         return env_files
     
     # 再加载 profile 特定配置（会覆盖基础配置）
@@ -68,6 +73,8 @@ def get_env_files() -> list[str]:
         profile_env = os.path.join(api_dir, f".env.{profile}")
         if os.path.exists(profile_env):
             env_files.append(profile_env)
+            if os.getenv("ENVIRONMENT", "").lower() != "production":
+                print(f"[Config] 加载 Profile 配置文件: {profile_env}")
         else:
             warnings.warn(f"Profile file not found: {profile_env}", stacklevel=1)
     
@@ -82,15 +89,15 @@ class Settings(BaseSettings):
         extra="ignore",
     )
     API_V1_STR: str = "/api/v1"
-    SECRET_KEY: str = secrets.token_urlsafe(32)
+    SECRET_KEY: str = "KaC9MXDkiiBZohHHlS7ZEU5BDHvJeZwAhPwDW5QLZhs"  # 测试环境默认密钥
     # 60 minutes * 24 hours * 8 days = 8 days
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8
-    FRONTEND_HOST: str = "http://localhost:5173"
-    ENVIRONMENT: Literal["local", "staging", "production"] = "local"
+    FRONTEND_HOST: str = "http://192.168.31.150"  # 测试环境默认前端地址
+    ENVIRONMENT: Literal["local", "staging", "production"] = "staging"  # 测试分支默认环境
 
     BACKEND_CORS_ORIGINS: Annotated[
         list[AnyUrl] | str, BeforeValidator(parse_cors)
-    ] = []
+    ] = "http://192.168.31.150,http://localhost:5173"  # 测试环境默认 CORS
 
     @computed_field  # type: ignore[prop-decorator]
     @property
@@ -99,13 +106,14 @@ class Settings(BaseSettings):
             self.FRONTEND_HOST
         ]
 
-    PROJECT_NAME: str
+    # 测试环境默认配置（测试分支专用，如果环境变量未设置则使用这些默认值）
+    PROJECT_NAME: str = "航融金融平台"
     SENTRY_DSN: HttpUrl | None = None
-    POSTGRES_SERVER: str
+    POSTGRES_SERVER: str = "192.168.31.150"  # 测试环境默认服务器
     POSTGRES_PORT: int = 5432
-    POSTGRES_USER: str
-    POSTGRES_PASSWORD: str = ""
-    POSTGRES_DB: str = ""
+    POSTGRES_USER: str = "postgres"
+    POSTGRES_PASSWORD: str = "Pg@2025#S3cure!2024"  # 测试环境默认密码
+    POSTGRES_DB: str = "finance"  # 测试环境默认数据库
 
     @computed_field  # type: ignore[prop-decorator]
     @property
@@ -142,8 +150,8 @@ class Settings(BaseSettings):
         return bool(self.SMTP_HOST and self.EMAILS_FROM_EMAIL)
 
     EMAIL_TEST_USER: EmailStr = "test@example.com"
-    FIRST_SUPERUSER: EmailStr
-    FIRST_SUPERUSER_PASSWORD: str
+    FIRST_SUPERUSER: EmailStr = "admin@hangrong.com"  # 测试环境默认值
+    FIRST_SUPERUSER_PASSWORD: str = "Admin@2025Secure"  # 测试环境默认值
 
     # ============================================
     # Tushare Pro 配置
