@@ -108,16 +108,18 @@ class Settings(BaseSettings):
     POSTGRES_SERVER: str = "192.168.31.150"  # 测试环境默认服务器
     POSTGRES_PORT: int = 5432
     POSTGRES_USER: str = "postgres"
-    POSTGRES_PASSWORD: str = "Pg@2025#S3cure!2024"  # 测试环境默认密码
+    POSTGRES_PASSWORD: str = "Pg2025Secure"  # 测试环境默认密码（不含特殊字符，便于直连）
     POSTGRES_DB: str = "finance"  # 测试环境默认数据库
 
     @computed_field  # type: ignore[prop-decorator]
     @property
     def SQLALCHEMY_DATABASE_URI(self) -> PostgresDsn:
+        # 密码含特殊字符时需要进行 URL 编码，否则 SQLAlchemy 解析会失败
+        encoded_password = quote(self.POSTGRES_PASSWORD, safe="")
         return PostgresDsn.build(
             scheme="postgresql+psycopg",
             username=self.POSTGRES_USER,
-            password=self.POSTGRES_PASSWORD,
+            password=encoded_password,
             host=self.POSTGRES_SERVER,
             port=self.POSTGRES_PORT,
             path=self.POSTGRES_DB,
