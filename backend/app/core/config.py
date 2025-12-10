@@ -33,15 +33,16 @@ def get_env_files() -> list[str]:
     1. .env.{profile} (如果 ENV_PROFILE 存在，会覆盖基础配置)
     2. .env (基础配置)
     
-    特殊处理：
-    - 如果存在 .env 文件且没有设置 ENV_PROFILE，直接使用 .env（适用于测试分支）
+    特殊处理（测试分支）：
+    - 如果没有设置 ENV_PROFILE，不加载任何 .env 文件，直接使用代码中的默认值
+    - 这样测试分支就不需要依赖服务器上的配置文件
     - 如果设置了 ENV_PROFILE，按原逻辑加载 .env 和 .env.{profile}
     
     示例：
     - ENV_PROFILE=local -> 加载 .env.local 和 .env
     - ENV_PROFILE=staging -> 加载 .env.staging 和 .env
     - ENV_PROFILE=production -> 加载 .env.production 和 .env
-    - 无 ENV_PROFILE 且存在 .env -> 直接使用 .env（测试分支）
+    - 无 ENV_PROFILE -> 不加载任何文件，使用代码默认值（测试分支）
     """
     # 获取 api 目录（backend 的上一级）
     # __file__: backend/app/core/config.py
@@ -53,30 +54,25 @@ def get_env_files() -> list[str]:
     env_files = []
     profile = os.getenv("ENV_PROFILE") or os.getenv("PROFILE")
     
+    # 如果没有设置 ENV_PROFILE，不加载任何配置文件，直接使用代码中的默认值（测试分支）
+    if not profile:
+        print("[Config] 测试分支模式：未设置 ENV_PROFILE，使用代码中的默认测试环境配置")
+        return []  # 返回空列表，不加载任何 .env 文件
+    
+    # 如果设置了 ENV_PROFILE，按原逻辑加载配置文件
     # 先加载基础配置
     base_env = os.path.join(api_dir, ".env")
     if os.path.exists(base_env):
         env_files.append(base_env)
-        # 调试输出（仅在非生产环境）
-        if os.getenv("ENVIRONMENT", "").lower() != "production":
-            print(f"[Config] 加载基础配置文件: {base_env}")
-    
-    # 如果没有设置 ENV_PROFILE 且 .env 文件存在，直接使用 .env（适用于测试分支）
-    if not profile and os.path.exists(base_env):
-        # 直接返回 .env 文件，不加载 profile 特定配置
-        if os.getenv("ENVIRONMENT", "").lower() != "production":
-            print(f"[Config] 测试分支模式：直接使用 .env 文件，不加载 profile 配置")
-        return env_files
+        print(f"[Config] 加载基础配置文件: {base_env}")
     
     # 再加载 profile 特定配置（会覆盖基础配置）
-    if profile:
-        profile_env = os.path.join(api_dir, f".env.{profile}")
-        if os.path.exists(profile_env):
-            env_files.append(profile_env)
-            if os.getenv("ENVIRONMENT", "").lower() != "production":
-                print(f"[Config] 加载 Profile 配置文件: {profile_env}")
-        else:
-            warnings.warn(f"Profile file not found: {profile_env}", stacklevel=1)
+    profile_env = os.path.join(api_dir, f".env.{profile}")
+    if os.path.exists(profile_env):
+        env_files.append(profile_env)
+        print(f"[Config] 加载 Profile 配置文件: {profile_env}")
+    else:
+        warnings.warn(f"Profile file not found: {profile_env}", stacklevel=1)
     
     return env_files
 
@@ -167,16 +163,32 @@ class Settings(BaseSettings):
             )
             if self.ENVIRONMENT == "local":
                 warnings.warn(message, stacklevel=1)
+            elif self.ENVIRONMENT == "staging":
+                # 测试环境：只警告，不报错
+                warnings.warn(message, stacklevel=1)
             else:
+                # 生产环境：强制要求修改
                 raise ValueError(message)
 
     @model_validator(mode="after")
     def _enforce_non_default_secrets(self) -> Self:
+        # 测试环境：如果 SECRET_KEY 是 "changethis"，自动使用代码中的默认值
+        if self.ENVIRONMENT == "staging" and self.SECRET_KEY == "changethis":
+            self.SECRET_KEY = "KaC9MXDkiiBZohHHlS7ZEU5BDHvJeZwAhPwDW5QLZhs"
+            warnings.warn(
+                "SECRET_KEY was 'changethis' in staging environment, using default test key.",
+                stacklevel=1
+            )
+        
+        # 执行检查
         self._check_default_secret("SECRET_KEY", self.SECRET_KEY)
-        self._check_default_secret("POSTGRES_PASSWORD", self.POSTGRES_PASSWORD)
-        self._check_default_secret(
-            "FIRST_SUPERUSER_PASSWORD", self.FIRST_SUPERUSER_PASSWORD
-        )
+        
+        # 生产环境才强制检查其他密钥
+        if self.ENVIRONMENT == "production":
+            self._check_default_secret("POSTGRES_PASSWORD", self.POSTGRES_PASSWORD)
+            self._check_default_secret(
+                "FIRST_SUPERUSER_PASSWORD", self.FIRST_SUPERUSER_PASSWORD
+            )
 
         return self
 
