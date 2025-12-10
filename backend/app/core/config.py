@@ -2,6 +2,7 @@ import os
 import secrets
 import warnings
 from typing import Annotated, Any, Literal
+from urllib.parse import quote
 
 from pydantic import (
     AnyUrl,
