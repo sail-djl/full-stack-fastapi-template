@@ -2,3 +2,5 @@ from app.scheduler.jobs.example_job import daily_task, interval_task, weekly_tas
 
 __all__ = ["daily_task", "interval_task", "weekly_task"]
 
+
+
