@@ -14,12 +14,16 @@ class PermissionService:
     @staticmethod
     def create_permission(session: Session, permission_in: PermissionCreate) -> Permission:
         """
-        创建权限（包含业务逻辑：key 唯一性验证）
+        创建权限（包含业务逻辑：key 唯一性验证、父节点有效性）
         """
-        # 业务逻辑：检查 key 是否已存在
         existing_permission = crud.get_permission_by_key(session=session, key=permission_in.key)
         if existing_permission:
             raise HTTPException(status_code=400, detail="Permission with this key already exists")
+
+        if permission_in.parent_id is not None:
+            parent = crud.get_permission_by_id(session=session, permission_id=permission_in.parent_id)
+            if parent is None:
+                raise HTTPException(status_code=400, detail="Parent permission not found")
 
         return crud.create_permission(session=session, permission_in=permission_in)
 

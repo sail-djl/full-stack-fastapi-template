@@ -34,7 +34,7 @@ class PermissionUpdate(SQLModel):
 class Permission(PermissionBase, table=True):
     __tablename__ = "permission"
     
-    id: int = Field(primary_key=True)
+    id: int | None = Field(default=None, primary_key=True)
 
 
 # Properties to return via API
