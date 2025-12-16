@@ -347,6 +347,67 @@ class FundService:
         return data_list
 
     @staticmethod
+    def get_fund_basic_list(
+        session: Session,
+        skip: int = 0,
+        limit: int = 1000,
+        keyword: str | None = None,
+        market: str | None = None,
+        status: str | None = None,
+        fund_type: str | None = None,
+        management: str | None = None,
+    ) -> tuple[list[dict[str, Any]], int]:
+        params: dict[str, Any] = {"skip": skip, "limit": limit}
+        where: list[str] = ["TRUE"]
+        if keyword:
+            params["kw"] = f"%{keyword}%"
+            where.append("(ts_code ILIKE :kw OR name ILIKE :kw OR management ILIKE :kw OR fund_type ILIKE :kw)")
+        if market:
+            params["market"] = market
+            where.append("market = :market")
+        if status:
+            params["status"] = status
+            where.append("status = :status")
+        if fund_type:
+            params["fund_type"] = fund_type
+            where.append("fund_type = :fund_type")
+        if management:
+            params["management"] = management
+            where.append("management = :management")
+        where_sql = " AND ".join(where)
+        sql_count = text(f"""
+            SELECT COUNT(*) AS total
+            FROM fund.fund_basic
+            WHERE {where_sql}
+        """)
+        total = int(session.execute(sql_count, params).scalar() or 0)
+        sql_data = text(f"""
+            SELECT 
+                ts_code,
+                name,
+                management,
+                custodian,
+                fund_type,
+                invest_type,
+                type,
+                found_date::text as found_date,
+                list_date::text as list_date,
+                status,
+                market,
+                m_fee,
+                c_fee,
+                update_time::text as update_time,
+                create_time::text as create_time
+            FROM fund.fund_basic
+            WHERE {where_sql}
+            ORDER BY ts_code
+            OFFSET :skip LIMIT :limit
+        """)
+        rows = session.execute(sql_data, params)
+        items: list[dict[str, Any]] = [dict(row._mapping) for row in rows]
+        return items, total
+
+    @staticmethod
     def get_etf_basic_list(
         session: Session,
         skip: int = 0,
