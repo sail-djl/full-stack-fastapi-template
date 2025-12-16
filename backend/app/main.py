@@ -1,7 +1,33 @@
+import logging
+import sys
+import os
+from logging.handlers import TimedRotatingFileHandler
 import sentry_sdk
 from fastapi import FastAPI
 from fastapi.routing import APIRoute
 from starlette.middleware.cors import CORSMiddleware
+
+# Ensure logs directory exists
+log_dir = "logs"
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+
+file_handler = TimedRotatingFileHandler(
+    filename=os.path.join(log_dir, "app.log"),
+    when="midnight",
+    interval=1,
+    backupCount=30,
+    encoding="utf-8"
+)
+file_handler.setFormatter(logging.Formatter('%(levelname)s:     %(name)s:%(message)s'))
+
+logging.basicConfig(
+    level=logging.INFO,
+    handlers=[
+        file_handler,
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 
 from app.api.main import api_router
 from app.core.config import settings
