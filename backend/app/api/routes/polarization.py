@@ -66,10 +66,10 @@ def get_deviation(
         import logging
         logger = logging.getLogger(__name__)
         sample = deviations[0]
-        logger.info(f"🔍 Backend Deviation: sample data keys: {sample.keys()}")
-        logger.info(f"🔍 Backend Deviation: sample data: {sample}")
-        logger.info(f"🔍 Backend Deviation: etf1PctChg={sample.get('etf1PctChg')}, type={type(sample.get('etf1PctChg'))}")
-        logger.info(f"🔍 Backend Deviation: etf2PctChg={sample.get('etf2PctChg')}, type={type(sample.get('etf2PctChg'))}")
+        logger.info(f"Backend Deviation: sample data keys: {sample.keys()}")
+        logger.info(f"Backend Deviation: sample data: {sample}")
+        logger.info(f"Backend Deviation: etf1PctChg={sample.get('etf1PctChg')}, type={type(sample.get('etf1PctChg'))}")
+        logger.info(f"Backend Deviation: etf2PctChg={sample.get('etf2PctChg')}, type={type(sample.get('etf2PctChg'))}")
     return deviations
 
 

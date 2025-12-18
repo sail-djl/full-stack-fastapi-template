@@ -153,7 +153,7 @@ class Settings(BaseSettings):
     # Tushare Pro 配置
     # ============================================
     TUSHARE_TOKEN: str | None = None
-    TUSHARE_API_URL: str = "http://pro.tushare.nlink.vip"  # 公共 API 地址
+    TUSHARE_API_URL: str = "http://tushare.nlink.vip"  # 公共 API 地址
 
     def _check_default_secret(self, var_name: str, value: str | None) -> None:
         if value == "changethis":

@@ -1,5 +1,9 @@
+import logging
 from typing import Any, Optional, List
 from datetime import datetime, timedelta, date
+
+logger = logging.getLogger(__name__)
+
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from sqlalchemy import text
@@ -85,14 +89,15 @@ def _upsert_records(session: Session, records: List[dict]) -> tuple[int, int]:
             update_time = CURRENT_TIMESTAMP
         """
     )
-    with session.connection() as conn:
-        for rec in records:
-            try:
-                conn.execute(sql, rec)
-                conn.commit()
-                success += 1
-            except Exception:
-                failed += 1
+    for rec in records:
+        try:
+            session.execute(sql, rec)
+            session.commit()
+            success += 1
+        except Exception as e:
+            logger.error(f"Upsert failed for {rec.get('ts_code')} {rec.get('nav_date')}: {e}")
+            session.rollback()
+            failed += 1
     return success, failed
 
 
@@ -143,6 +148,8 @@ def sync_fund_nav(session: SessionDep, payload: FundSyncPayload) -> Any:
     
     # 初始化 Tushare 接口
     pro = ts.pro_api(settings.TUSHARE_TOKEN)
+    logger.info(f"Sync request received. Payload: {payload}")
+
     # 如果配置了自定义 API URL，则进行覆盖（针对代理/内网环境）
     if settings.TUSHARE_API_URL:
         pro._DataApi__http_url = settings.TUSHARE_API_URL
@@ -180,6 +187,7 @@ def sync_fund_nav(session: SessionDep, payload: FundSyncPayload) -> Any:
                 params["market"] = payload.market
             
             try:
+                logger.info(f"Fetching fund_nav for date {cur}, params: {params}")
                 df = pro.fund_nav(**params)
             except Exception as e:
                 # 记录失败但不中断整个循环，或者选择中断
@@ -187,13 +195,46 @@ def sync_fund_nav(session: SessionDep, payload: FundSyncPayload) -> Any:
                 raise HTTPException(status_code=500, detail=f"Tushare API 调用失败: {e}")
 
             if df is not None and not df.empty:
+                # -----------------------------------------------------------
+                # 数据清洗与 pct_chg 计算 (参考 import_fund_nav_013286.py)
+                # -----------------------------------------------------------
+                import pandas as pd
+                
+                # 1. 确保 unit_nav 是数值型
+                if 'unit_nav' in df.columns:
+                    df['unit_nav'] = pd.to_numeric(df['unit_nav'], errors='coerce')
+                
+                # 2. 按代码和日期排序 (日期为 YYYYMMDD 字符串，排序有效)
+                if 'ts_code' in df.columns and 'nav_date' in df.columns:
+                    df = df.sort_values(['ts_code', 'nav_date'])
+                
+                # 3. 计算 pct_chg
+                if 'unit_nav' in df.columns and 'ts_code' in df.columns:
+                    # 计算新的涨跌幅
+                    calculated_pct = df.groupby('ts_code')['unit_nav'].pct_change() * 100
+                    
+                    # 如果原数据中有 pct_chg，则优先使用计算值，但保留计算值为 NaN (第一条) 时的原值
+                    if 'pct_chg' in df.columns:
+                         # 确保原 pct_chg 也是数值
+                         df['pct_chg'] = pd.to_numeric(df['pct_chg'], errors='coerce')
+                         df['pct_chg'] = calculated_pct.fillna(df['pct_chg'])
+                    else:
+                         df['pct_chg'] = calculated_pct
+                # -----------------------------------------------------------
+
                 rows = df.to_dict("records")
                 if codes:
                     rows = [r for r in rows if r.get("ts_code") in codes]
                 transformed = _transform_rows(rows)
+                logger.info(f"-------------- Sync Data Batch ({len(transformed)}) --------------")
+                for item in transformed:
+                    logger.info(item)
+                logger.info("---------------------------------------------------------------")
                 succ, fail = _upsert_records(session, transformed)
                 total_success += succ
                 total_failed += fail
+            else:
+                logger.info(f"No data found for date {cur}")
             cur += timedelta(days=1)
     else:
         items, _ = FundService.get_fund_basic_list(
@@ -217,7 +258,13 @@ def sync_fund_nav(session: SessionDep, payload: FundSyncPayload) -> Any:
             if df is not None and not df.empty:
                 rows = df.to_dict("records")
                 transformed = _transform_rows(rows)
+                logger.info(f"-------------- Sync Data Batch ({len(transformed)}) for {code} --------------")
+                for item in transformed:
+                    logger.info(item)
+                logger.info("---------------------------------------------------------------")
                 succ, fail = _upsert_records(session, transformed)
                 total_success += succ
                 total_failed += fail
+            else:
+                logger.info(f"No data found for code {code}")
     return {"message": "sync triggered", "success": total_success, "failed": total_failed}

@@ -7,7 +7,7 @@ Tushare Pro 的配置已经添加到 `app/core/config.py` 中的 `Settings` 类�
 ## 配置项
 
 - `TUSHARE_TOKEN`: Tushare Pro API Token（从环境变量读取）
-- `TUSHARE_API_URL`: Tushare Pro API 地址（默认：`http://pro.tushare.nlink.vip`）
+- `TUSHARE_API_URL`: Tushare Pro API 地址（默认：`http://tushare.nlink.vip`）
 
 ## 环境变量配置
 
@@ -17,8 +17,8 @@ Tushare Pro 的配置已经添加到 `app/core/config.py` 中的 `Settings` 类�
 # ============================================
 # Tushare Pro 配置
 # ============================================
-TUSHARE_TOKEN=b1i2r1j1j0eu2ev258
-TUSHARE_API_URL=http://pro.tushare.nlink.vip
+TUSHARE_TOKEN=b302025121616105311luwkjejo1dsuks
+TUSHARE_API_URL=http://tushare.nlink.vip
 ```
 
 ## 使用方法
