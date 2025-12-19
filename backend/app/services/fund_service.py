@@ -456,3 +456,57 @@ class FundService:
         rows = session.execute(sql_data, params)
         items: list[dict[str, Any]] = [dict(row._mapping) for row in rows]
         return items, total
+
+    @staticmethod
+    def get_fund_factor_list(
+        session: Session,
+        ts_code: str,
+        start_date: str | None = None,
+        end_date: str | None = None,
+        limit: int = 1000
+    ) -> list[dict[str, Any]]:
+        """
+        获取基金技术面因子数据 (fund.fund_factor_pro)
+        """
+        where: list[str] = ["ts_code = :ts_code"]
+        params: dict[str, Any] = {"ts_code": ts_code, "limit": limit}
+
+        if start_date:
+            where.append("trade_date >= :start_date")
+            params["start_date"] = start_date
+        if end_date:
+            where.append("trade_date <= :end_date")
+            params["end_date"] = end_date
+
+        where_sql = " AND ".join(where)
+        
+        sql = text(f"""
+            SELECT 
+                ts_code,
+                trade_date::text as trade_date,
+                open, high, low, close, pre_close,
+                change, pct_change, vol, amount,
+                turnover_rate, turnover_rate_f,
+                pe, pe_ttm, pb, ps, ps_ttm,
+                dv_ratio, dv_ttm, total_share, float_share,
+                free_share, total_mv, circ_mv
+            FROM fund.fund_factor_pro
+            WHERE {where_sql}
+            ORDER BY trade_date DESC
+            LIMIT :limit
+        """)
+        
+        rows = session.execute(sql, params)
+        items: list[dict[str, Any]] = []
+        for row in rows:
+            r = dict(row._mapping)
+            # Ensure numeric fields are float
+            for k, v in r.items():
+                if k not in ['ts_code', 'trade_date'] and v is not None:
+                    try:
+                        r[k] = float(v)
+                    except (ValueError, TypeError):
+                        pass
+            items.append(r)
+            
+        return items
