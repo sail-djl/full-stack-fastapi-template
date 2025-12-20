@@ -1,0 +1,991 @@
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:32:21 CST)" was missed by 0:03:29.657923
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:37:21 CST)" (scheduled at 2025-12-19 00:32:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 00:32:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:37:21 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:42:21 CST)" (scheduled at 2025-12-19 00:37:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 00:37:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:42:21 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:47:21 CST)" (scheduled at 2025-12-19 00:42:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 00:42:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:47:21 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:52:21 CST)" (scheduled at 2025-12-19 00:47:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 00:47:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 00:52:21 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 08:02:21 CST)" was missed by 0:00:13.315056
+WARNING:     apscheduler.executors.default:Run time of job "每日定时任务 (trigger: cron[hour='2', minute='0'], next run at: 2025-12-20 02:00:00 CST)" was missed by 5:57:34.423717
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 08:07:21 CST)" (scheduled at 2025-12-19 08:02:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 08:02:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 08:07:21 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 08:12:21 CST)" (scheduled at 2025-12-19 08:07:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 08:07:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 08:12:21 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 10:42:21 CST)" was missed by 0:02:31.944132
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 10:47:21 CST)" (scheduled at 2025-12-19 10:42:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 10:42:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 10:47:21 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 10:52:21 CST)" (scheduled at 2025-12-19 10:47:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 10:47:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 10:52:21 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 10:57:21 CST)" (scheduled at 2025-12-19 10:52:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 10:52:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 10:57:21 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:02:21 CST)" (scheduled at 2025-12-19 10:57:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 10:57:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:02:21 CST)" executed successfully
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2025-12-01' end_date='2025-12-19' keyword='013286.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Database filter enabled: 1 funds found. (If 0, no filtering will be applied unless keyword was specific)
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-01, params: {'nav_date': '20251201'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-01
+INFO:     app.api.routes.fund:Filtered records from 10500 to 1 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (1) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+INFO:     app.api.routes.fund:Upsert Summary for 2025-12-01: Success=1, Failed=0
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-02, params: {'nav_date': '20251202'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-02
+INFO:     app.api.routes.fund:Filtered records from 10500 to 1 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (1) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+INFO:     app.api.routes.fund:Upsert Summary for 2025-12-02: Success=1, Failed=0
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-03, params: {'nav_date': '20251203'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-03
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-03 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-04, params: {'nav_date': '20251204'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-04
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-04 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-05, params: {'nav_date': '20251205'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-05
+INFO:     app.api.routes.fund:Filtered records from 10500 to 1 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (1) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+INFO:     app.api.routes.fund:Upsert Summary for 2025-12-05: Success=1, Failed=0
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-06, params: {'nav_date': '20251206'}
+INFO:     app.api.routes.fund:Tushare returned 1 records for date 2025-12-06
+INFO:     app.api.routes.fund:Filtered records from 1 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-06 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-07, params: {'nav_date': '20251207'}
+INFO:     app.api.routes.fund:Tushare returned 937 records for date 2025-12-07
+INFO:     app.api.routes.fund:Filtered records from 937 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-07 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-08, params: {'nav_date': '20251208'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-08
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-08 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-09, params: {'nav_date': '20251209'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-09
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-09 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-10, params: {'nav_date': '20251210'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-10
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-10 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-11, params: {'nav_date': '20251211'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-11
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-11 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-12, params: {'nav_date': '20251212'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-12
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-12 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-13, params: {'nav_date': '20251213'}
+INFO:     app.api.routes.fund:Tushare returned 1 records for date 2025-12-13
+INFO:     app.api.routes.fund:Filtered records from 1 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-13 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-14, params: {'nav_date': '20251214'}
+INFO:     app.api.routes.fund:Tushare returned 940 records for date 2025-12-14
+INFO:     app.api.routes.fund:Filtered records from 940 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-14 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-15, params: {'nav_date': '20251215'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-15
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-15 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-16, params: {'nav_date': '20251216'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-16
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-16 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-17, params: {'nav_date': '20251217'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-17
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-17 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-18, params: {'nav_date': '20251218'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-18
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-18 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-19, params: {'nav_date': '20251219'}
+INFO:     app.api.routes.fund:No data found for date 2025-12-19
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:07:21 CST)" (scheduled at 2025-12-19 11:02:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:02:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:07:21 CST)" executed successfully
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2025-12-01' end_date='2025-12-19' keyword='013286.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Database filter enabled: 1 funds found. (If 0, no filtering will be applied unless keyword was specific)
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-01, params: {'nav_date': '20251201'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-01
+INFO:     app.api.routes.fund:Filtered records from 10500 to 1 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (1) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+INFO:     app.api.routes.fund:Upsert Summary for 2025-12-01: Success=1, Failed=0
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-02, params: {'nav_date': '20251202'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-02
+INFO:     app.api.routes.fund:Filtered records from 10500 to 1 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (1) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+INFO:     app.api.routes.fund:Upsert Summary for 2025-12-02: Success=1, Failed=0
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-03, params: {'nav_date': '20251203'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-03
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-03 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-04, params: {'nav_date': '20251204'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-04
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-04 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-05, params: {'nav_date': '20251205'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-05
+INFO:     app.api.routes.fund:Filtered records from 10500 to 1 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (1) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+INFO:     app.api.routes.fund:Upsert Summary for 2025-12-05: Success=1, Failed=0
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-06, params: {'nav_date': '20251206'}
+INFO:     app.api.routes.fund:Tushare returned 1 records for date 2025-12-06
+INFO:     app.api.routes.fund:Filtered records from 1 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-06 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-07, params: {'nav_date': '20251207'}
+INFO:     app.api.routes.fund:Tushare returned 937 records for date 2025-12-07
+INFO:     app.api.routes.fund:Filtered records from 937 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-07 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-08, params: {'nav_date': '20251208'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-08
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-08 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-09, params: {'nav_date': '20251209'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-09
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-09 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-10, params: {'nav_date': '20251210'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-10
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-10 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-11, params: {'nav_date': '20251211'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-11
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-11 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-12, params: {'nav_date': '20251212'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-12
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-12 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-13, params: {'nav_date': '20251213'}
+INFO:     app.api.routes.fund:Tushare returned 1 records for date 2025-12-13
+INFO:     app.api.routes.fund:Filtered records from 1 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-13 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-14, params: {'nav_date': '20251214'}
+INFO:     app.api.routes.fund:Tushare returned 940 records for date 2025-12-14
+INFO:     app.api.routes.fund:Filtered records from 940 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-14 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-15, params: {'nav_date': '20251215'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-15
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-15 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-16, params: {'nav_date': '20251216'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-16
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-16 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-17, params: {'nav_date': '20251217'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-17
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-17 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-18, params: {'nav_date': '20251218'}
+INFO:     app.api.routes.fund:Tushare returned 10500 records for date 2025-12-18
+INFO:     app.api.routes.fund:Filtered records from 10500 to 0 based on database whitelist.
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (0) --------------
+INFO:     app.api.routes.fund:---------------------------------------------------------------
+WARNING:     app.api.routes.fund:No records left to upsert for 2025-12-18 after filtering.
+INFO:     app.api.routes.fund:Fetching fund_nav for date 2025-12-19, params: {'nav_date': '20251219'}
+INFO:     app.api.routes.fund:No data found for date 2025-12-19
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:12:21 CST)" (scheduled at 2025-12-19 11:07:21.107658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:07:21
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:12:21 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-19 11:16:20.754843+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-20 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-22 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-19 11:21:14.090996+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-20 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-22 09:00:00+08:00)
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2025-12-01' end_date='2025-12-19' keyword='013286.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Found 1 funds to sync.
+INFO:     app.api.routes.fund:Fetching fund_nav for 013286.OF, range: 20251201-20251219
+INFO:     app.api.routes.fund:Tushare returned 14 records for 013286.OF
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (14) for 013286.OF --------------
+INFO:     app.api.routes.fund:Upsert Summary for 013286.OF: Success=14, Failed=0
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2025-12-01' end_date='2025-12-19' keyword='001593.OF\t' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2025-12-01' end_date='2025-12-19' keyword='001593.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Found 1 funds to sync.
+INFO:     app.api.routes.fund:Fetching fund_nav for 001593.OF, range: 20251201-20251219
+INFO:     app.api.routes.fund:Tushare returned 14 records for 001593.OF
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (14) for 001593.OF --------------
+INFO:     app.api.routes.fund:Upsert Summary for 001593.OF: Success=14, Failed=0
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:26:14 CST)" (scheduled at 2025-12-19 11:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:26:14 CST)" executed successfully
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2025-11-01' end_date='2025-11-30' keyword='001593.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Found 1 funds to sync.
+INFO:     app.api.routes.fund:Fetching fund_nav for 001593.OF, range: 20251101-20251130
+INFO:     app.api.routes.fund:Tushare returned 24 records for 001593.OF
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (24) for 001593.OF --------------
+INFO:     app.api.routes.fund:Upsert Summary for 001593.OF: Success=24, Failed=0
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2025-11-01' end_date='2025-11-30' keyword='013286.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Found 1 funds to sync.
+INFO:     app.api.routes.fund:Fetching fund_nav for 013286.OF, range: 20251101-20251130
+INFO:     app.api.routes.fund:Tushare returned 25 records for 013286.OF
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (25) for 013286.OF --------------
+INFO:     app.api.routes.fund:Upsert Summary for 013286.OF: Success=25, Failed=0
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:31:14 CST)" (scheduled at 2025-12-19 11:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:36:14 CST)" (scheduled at 2025-12-19 11:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:41:14 CST)" (scheduled at 2025-12-19 11:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:46:14 CST)" (scheduled at 2025-12-19 11:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:51:14 CST)" (scheduled at 2025-12-19 11:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:51:14 CST)" executed successfully
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:56:14 CST)" (scheduled at 2025-12-19 11:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 11:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:01:14 CST)" (scheduled at 2025-12-19 11:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 11:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:06:14 CST)" (scheduled at 2025-12-19 12:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:11:14 CST)" (scheduled at 2025-12-19 12:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:16:14 CST)" (scheduled at 2025-12-19 12:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:21:14 CST)" (scheduled at 2025-12-19 12:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:26:14 CST)" (scheduled at 2025-12-19 12:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:31:14 CST)" (scheduled at 2025-12-19 12:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:36:14 CST)" (scheduled at 2025-12-19 12:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:41:14 CST)" (scheduled at 2025-12-19 12:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:46:14 CST)" (scheduled at 2025-12-19 12:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:51:14 CST)" (scheduled at 2025-12-19 12:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:56:14 CST)" (scheduled at 2025-12-19 12:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 12:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:01:14 CST)" (scheduled at 2025-12-19 12:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 12:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:06:14 CST)" (scheduled at 2025-12-19 13:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:11:14 CST)" (scheduled at 2025-12-19 13:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:16:14 CST)" (scheduled at 2025-12-19 13:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:16:14 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:21:14 CST)" was missed by 0:00:01.857456
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:26:14 CST)" (scheduled at 2025-12-19 13:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:31:14 CST)" (scheduled at 2025-12-19 13:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:36:14 CST)" (scheduled at 2025-12-19 13:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:41:14 CST)" (scheduled at 2025-12-19 13:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:46:14 CST)" (scheduled at 2025-12-19 13:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:51:14 CST)" (scheduled at 2025-12-19 13:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:56:14 CST)" (scheduled at 2025-12-19 13:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 13:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:01:14 CST)" (scheduled at 2025-12-19 13:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 13:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:06:14 CST)" (scheduled at 2025-12-19 14:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:11:14 CST)" (scheduled at 2025-12-19 14:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:16:14 CST)" (scheduled at 2025-12-19 14:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:21:14 CST)" (scheduled at 2025-12-19 14:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:26:14 CST)" (scheduled at 2025-12-19 14:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:31:14 CST)" (scheduled at 2025-12-19 14:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:36:14 CST)" (scheduled at 2025-12-19 14:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:41:14 CST)" (scheduled at 2025-12-19 14:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:46:14 CST)" (scheduled at 2025-12-19 14:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:46:14 CST)" executed successfully
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-12', 'deviation': -0.5386, 'etf1PctChg': 0.4262, 'etf2PctChg': 0.9648}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4262, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.9648, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:51:14 CST)" (scheduled at 2025-12-19 14:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:56:14 CST)" (scheduled at 2025-12-19 14:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 14:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:01:14 CST)" (scheduled at 2025-12-19 14:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 14:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:06:14 CST)" (scheduled at 2025-12-19 15:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:11:14 CST)" (scheduled at 2025-12-19 15:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:16:14 CST)" (scheduled at 2025-12-19 15:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:21:14 CST)" (scheduled at 2025-12-19 15:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:26:14 CST)" (scheduled at 2025-12-19 15:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:31:14 CST)" (scheduled at 2025-12-19 15:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:36:14 CST)" (scheduled at 2025-12-19 15:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:41:14 CST)" (scheduled at 2025-12-19 15:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:46:14 CST)" (scheduled at 2025-12-19 15:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:51:14 CST)" (scheduled at 2025-12-19 15:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:56:14 CST)" (scheduled at 2025-12-19 15:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 15:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:01:14 CST)" (scheduled at 2025-12-19 15:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 15:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:06:14 CST)" (scheduled at 2025-12-19 16:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:11:14 CST)" (scheduled at 2025-12-19 16:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:16:14 CST)" (scheduled at 2025-12-19 16:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:21:14 CST)" (scheduled at 2025-12-19 16:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:26:14 CST)" (scheduled at 2025-12-19 16:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:31:14 CST)" (scheduled at 2025-12-19 16:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:36:14 CST)" (scheduled at 2025-12-19 16:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:41:14 CST)" (scheduled at 2025-12-19 16:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:46:14 CST)" (scheduled at 2025-12-19 16:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:51:14 CST)" (scheduled at 2025-12-19 16:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:56:14 CST)" (scheduled at 2025-12-19 16:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 16:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:01:14 CST)" (scheduled at 2025-12-19 16:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 16:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:06:14 CST)" (scheduled at 2025-12-19 17:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:11:14 CST)" (scheduled at 2025-12-19 17:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:16:14 CST)" (scheduled at 2025-12-19 17:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:21:14 CST)" (scheduled at 2025-12-19 17:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:26:14 CST)" (scheduled at 2025-12-19 17:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:31:14 CST)" (scheduled at 2025-12-19 17:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:36:14 CST)" (scheduled at 2025-12-19 17:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:41:14 CST)" (scheduled at 2025-12-19 17:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:46:14 CST)" (scheduled at 2025-12-19 17:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:51:14 CST)" (scheduled at 2025-12-19 17:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:56:14 CST)" (scheduled at 2025-12-19 17:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 17:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:01:14 CST)" (scheduled at 2025-12-19 17:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 17:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:06:14 CST)" (scheduled at 2025-12-19 18:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:11:14 CST)" (scheduled at 2025-12-19 18:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:16:14 CST)" (scheduled at 2025-12-19 18:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:21:14 CST)" (scheduled at 2025-12-19 18:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:26:14 CST)" (scheduled at 2025-12-19 18:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:31:14 CST)" (scheduled at 2025-12-19 18:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:36:14 CST)" (scheduled at 2025-12-19 18:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:41:14 CST)" (scheduled at 2025-12-19 18:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:46:14 CST)" (scheduled at 2025-12-19 18:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:51:14 CST)" (scheduled at 2025-12-19 18:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:56:14 CST)" (scheduled at 2025-12-19 18:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 18:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:01:14 CST)" (scheduled at 2025-12-19 18:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 18:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:06:14 CST)" (scheduled at 2025-12-19 19:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:11:14 CST)" (scheduled at 2025-12-19 19:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:16:14 CST)" (scheduled at 2025-12-19 19:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:21:14 CST)" (scheduled at 2025-12-19 19:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:26:14 CST)" (scheduled at 2025-12-19 19:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:31:14 CST)" (scheduled at 2025-12-19 19:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:36:14 CST)" (scheduled at 2025-12-19 19:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:41:14 CST)" (scheduled at 2025-12-19 19:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:46:14 CST)" (scheduled at 2025-12-19 19:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:51:14 CST)" (scheduled at 2025-12-19 19:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:56:14 CST)" (scheduled at 2025-12-19 19:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 19:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:01:14 CST)" (scheduled at 2025-12-19 19:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 19:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:06:14 CST)" (scheduled at 2025-12-19 20:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:11:14 CST)" (scheduled at 2025-12-19 20:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:16:14 CST)" (scheduled at 2025-12-19 20:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:21:14 CST)" (scheduled at 2025-12-19 20:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:26:14 CST)" (scheduled at 2025-12-19 20:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:31:14 CST)" (scheduled at 2025-12-19 20:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:36:14 CST)" (scheduled at 2025-12-19 20:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:41:14 CST)" (scheduled at 2025-12-19 20:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:46:14 CST)" (scheduled at 2025-12-19 20:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:51:14 CST)" (scheduled at 2025-12-19 20:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:56:14 CST)" (scheduled at 2025-12-19 20:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 20:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:01:14 CST)" (scheduled at 2025-12-19 20:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 20:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:06:14 CST)" (scheduled at 2025-12-19 21:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:11:14 CST)" (scheduled at 2025-12-19 21:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:16:14 CST)" (scheduled at 2025-12-19 21:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:21:14 CST)" (scheduled at 2025-12-19 21:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:26:14 CST)" (scheduled at 2025-12-19 21:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:31:14 CST)" (scheduled at 2025-12-19 21:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:36:14 CST)" (scheduled at 2025-12-19 21:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:41:14 CST)" (scheduled at 2025-12-19 21:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:46:14 CST)" (scheduled at 2025-12-19 21:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:51:14 CST)" (scheduled at 2025-12-19 21:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:56:14 CST)" (scheduled at 2025-12-19 21:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 21:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:01:14 CST)" (scheduled at 2025-12-19 21:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 21:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:06:14 CST)" (scheduled at 2025-12-19 22:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:11:14 CST)" (scheduled at 2025-12-19 22:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:16:14 CST)" (scheduled at 2025-12-19 22:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:21:14 CST)" (scheduled at 2025-12-19 22:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:26:14 CST)" (scheduled at 2025-12-19 22:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:31:14 CST)" (scheduled at 2025-12-19 22:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:36:14 CST)" (scheduled at 2025-12-19 22:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:41:14 CST)" (scheduled at 2025-12-19 22:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:46:14 CST)" (scheduled at 2025-12-19 22:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:51:14 CST)" (scheduled at 2025-12-19 22:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:56:14 CST)" (scheduled at 2025-12-19 22:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 22:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:01:14 CST)" (scheduled at 2025-12-19 22:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 22:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:01:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:06:14 CST)" (scheduled at 2025-12-19 23:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:11:14 CST)" (scheduled at 2025-12-19 23:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:16:14 CST)" (scheduled at 2025-12-19 23:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:16:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:21:14 CST)" (scheduled at 2025-12-19 23:16:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:16:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:21:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:26:14 CST)" (scheduled at 2025-12-19 23:21:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:21:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:26:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:31:14 CST)" (scheduled at 2025-12-19 23:26:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:26:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:31:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:36:14 CST)" (scheduled at 2025-12-19 23:31:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:31:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:36:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:41:14 CST)" (scheduled at 2025-12-19 23:36:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:36:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:41:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:46:14 CST)" (scheduled at 2025-12-19 23:41:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:41:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:46:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:51:14 CST)" (scheduled at 2025-12-19 23:46:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:46:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:51:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:56:14 CST)" (scheduled at 2025-12-19 23:51:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:51:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-19 23:56:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-20 00:01:14 CST)" (scheduled at 2025-12-19 23:56:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-19 23:56:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-20 00:01:14 CST)" executed successfully

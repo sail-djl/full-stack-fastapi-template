@@ -1,0 +1,545 @@
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-21 00:06:14 CST)" (scheduled at 2025-12-21 00:01:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-21 00:01:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-21 00:06:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-21 00:11:14 CST)" (scheduled at 2025-12-21 00:06:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-21 00:06:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-21 00:11:14 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-21 00:16:14 CST)" (scheduled at 2025-12-21 00:11:14.090996+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-21 00:11:14
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-21 00:16:14 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-21 00:19:30.590433+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-21 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-22 09:00:00+08:00)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-21 00:24:30 CST)" (scheduled at 2025-12-21 00:19:30.590433+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-21 00:19:30
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-21 00:24:30 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-21 00:29:30.403984+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-21 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-22 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-21 00:34:09.789228+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-21 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-22 09:00:00+08:00)
+WARNING:     passlib.handlers.bcrypt:(trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+INFO:     app.api.routes.index:Sync index_daily request received. Payload: ts_code='000001.CJ' start_date=None end_date=None
+INFO:     app.api.routes.index:Fetching index_daily for 000001.CJ, range: 20221222 - 20231222
+INFO:     app.api.routes.index:Fetching index_daily for 000001.CJ, range: 20231223 - 20241222
+INFO:     app.api.routes.index:Fetching index_daily for 000001.CJ, range: 20241223 - 20251221
+INFO:     app.api.routes.index:Sync index_dailybasic request received. Payload: ts_code='000001.CJ' trade_date=None start_date=None end_date=None
+INFO:     app.api.routes.index:Sync index_dailybasic request received. Payload: ts_code='000001.CJ' trade_date='2025-12-20' start_date=None end_date=None
+INFO:     app.api.routes.index:Fetching index_dailybasic for date: 2025-12-20
+INFO:     app.api.routes.index:Sync index_weekly request received. Payload: ts_code='000001.CJ' start_date=None end_date=None
+INFO:     app.api.routes.index:Fetching index_weekly for 000001.CJ, range: 20221222 - 20251221
+INFO:     app.api.routes.index:Sync index_classify request received. Payload: level='L1' src='sw2021'
+INFO:     app.api.routes.index:Fetching index_classify with params: {'src': 'sw2021', 'level': 'L1'}
+INFO:     app.api.routes.index:Tushare returned 31 records
+WARNING:     psycopg:error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=192.168.31.150 user=postgres database=finance) at 0x1f7cd927b10>: pipeline aborted
+ERROR:     app.api.routes.index:Upsert batch failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: [{'index_code': '801010.SI', 'industry_name': '农林牧渔', 'level': 'L1', 'industry_code': '110000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801030.SI', 'industry_name': '基础化工', 'level': 'L1', 'industry_code': '220000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801040.SI', 'industry_name': '钢铁', 'level': 'L1', 'industry_code': '230000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801050.SI', 'industry_name': '有色金属', 'level': 'L1', 'industry_code': '240000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801080.SI', 'industry_name': '电子', 'level': 'L1', 'industry_code': '270000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801880.SI', 'industry_name': '汽车', 'level': 'L1', 'industry_code': '280000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801110.SI', 'industry_name': '家用电器', 'level': 'L1', 'industry_code': '330000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801120.SI', 'industry_name': '食品饮料', 'level': 'L1', 'industry_code': '340000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}  ... displaying 10 of 31 total bound parameter sets ...  {'index_code': '801970.SI', 'industry_name': '环保', 'level': 'L1', 'industry_code': '760000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801980.SI', 'industry_name': '美容护理', 'level': 'L1', 'industry_code': '770000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 938, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\api\routes\index.py", line 335, in _upsert_records
+    session.execute(text(sql_str), batch)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlmodel\orm\session.py", line 127, in execute
+    return super().execute(
+           ^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2256, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 938, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+sqlalchemy.exc.ProgrammingError: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: [{'index_code': '801010.SI', 'industry_name': '农林牧渔', 'level': 'L1', 'industry_code': '110000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801030.SI', 'industry_name': '基础化工', 'level': 'L1', 'industry_code': '220000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801040.SI', 'industry_name': '钢铁', 'level': 'L1', 'industry_code': '230000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801050.SI', 'industry_name': '有色金属', 'level': 'L1', 'industry_code': '240000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801080.SI', 'industry_name': '电子', 'level': 'L1', 'industry_code': '270000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801880.SI', 'industry_name': '汽车', 'level': 'L1', 'industry_code': '280000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801110.SI', 'industry_name': '家用电器', 'level': 'L1', 'industry_code': '330000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801120.SI', 'industry_name': '食品饮料', 'level': 'L1', 'industry_code': '340000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}  ... displaying 10 of 31 total bound parameter sets ...  {'index_code': '801970.SI', 'industry_name': '环保', 'level': 'L1', 'industry_code': '760000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}, {'index_code': '801980.SI', 'industry_name': '美容护理', 'level': 'L1', 'industry_code': '770000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801010.SI', 'industry_name': '农林牧渔', 'level': 'L1', 'industry_code': '110000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801030.SI', 'industry_name': '基础化工', 'level': 'L1', 'industry_code': '220000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801040.SI', 'industry_name': '钢铁', 'level': 'L1', 'industry_code': '230000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801050.SI', 'industry_name': '有色金属', 'level': 'L1', 'industry_code': '240000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801080.SI', 'industry_name': '电子', 'level': 'L1', 'industry_code': '270000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801880.SI', 'industry_name': '汽车', 'level': 'L1', 'industry_code': '280000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801110.SI', 'industry_name': '家用电器', 'level': 'L1', 'industry_code': '330000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801120.SI', 'industry_name': '食品饮料', 'level': 'L1', 'industry_code': '340000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801130.SI', 'industry_name': '纺织服饰', 'level': 'L1', 'industry_code': '350000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801140.SI', 'industry_name': '轻工制造', 'level': 'L1', 'industry_code': '360000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801150.SI', 'industry_name': '医药生物', 'level': 'L1', 'industry_code': '370000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801160.SI', 'industry_name': '公用事业', 'level': 'L1', 'industry_code': '410000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801170.SI', 'industry_name': '交通运输', 'level': 'L1', 'industry_code': '420000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801180.SI', 'industry_name': '房地产', 'level': 'L1', 'industry_code': '430000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801200.SI', 'industry_name': '商贸零售', 'level': 'L1', 'industry_code': '450000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801210.SI', 'industry_name': '社会服务', 'level': 'L1', 'industry_code': '460000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801780.SI', 'industry_name': '银行', 'level': 'L1', 'industry_code': '480000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801790.SI', 'industry_name': '非银金融', 'level': 'L1', 'industry_code': '490000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801230.SI', 'industry_name': '综合', 'level': 'L1', 'industry_code': '510000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801710.SI', 'industry_name': '建筑材料', 'level': 'L1', 'industry_code': '610000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801720.SI', 'industry_name': '建筑装饰', 'level': 'L1', 'industry_code': '620000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801730.SI', 'industry_name': '电力设备', 'level': 'L1', 'industry_code': '630000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801890.SI', 'industry_name': '机械设备', 'level': 'L1', 'industry_code': '640000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801740.SI', 'industry_name': '国防军工', 'level': 'L1', 'industry_code': '650000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801750.SI', 'industry_name': '计算机', 'level': 'L1', 'industry_code': '710000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801760.SI', 'industry_name': '传媒', 'level': 'L1', 'industry_code': '720000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801770.SI', 'industry_name': '通信', 'level': 'L1', 'industry_code': '730000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801950.SI', 'industry_name': '煤炭', 'level': 'L1', 'industry_code': '740000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801960.SI', 'industry_name': '石油石化', 'level': 'L1', 'industry_code': '750000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801970.SI', 'industry_name': '环保', 'level': 'L1', 'industry_code': '760000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:     app.api.routes.index:Upsert single failed: (psycopg.errors.UndefinedColumn) column "industry_name" of relation "index_classify" does not exist
+LINE 2: ...    INSERT INTO index.index_classify (index_code, industry_n...
+                                                             ^
+[SQL: 
+        INSERT INTO index.index_classify (index_code, industry_name, level, industry_code, is_pub, parent_code, src)
+        VALUES (%(index_code)s, %(industry_name)s, %(level)s, %(industry_code)s, %(is_pub)s, %(parent_code)s, %(src)s)
+        ON CONFLICT (index_code)
+        DO UPDATE SET
+            industry_name = EXCLUDED.industry_name, level = EXCLUDED.level, industry_code = EXCLUDED.industry_code, is_pub = EXCLUDED.is_pub, parent_code = EXCLUDED.parent_code, src = EXCLUDED.src,
+            update_time = CURRENT_TIMESTAMP
+    ]
+[parameters: {'index_code': '801980.SI', 'industry_name': '美容护理', 'level': 'L1', 'industry_code': '770000', 'is_pub': '1', 'parent_code': '0', 'src': 'SW2021'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
