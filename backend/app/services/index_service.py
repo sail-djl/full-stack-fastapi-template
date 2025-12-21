@@ -243,8 +243,10 @@ class IndexService:
         session: Session,
         skip: int = 0,
         limit: int = 1000,
+        index_code: str | None = None,
         level: str | None = None,
-        src: str = "sw2021",
+        parent_code: str | None = None,
+        src: str = "SW2021",
         keyword: str | None = None,
     ) -> tuple[list[dict[str, Any]], int]:
         """
@@ -256,14 +258,19 @@ class IndexService:
         
         if keyword:
             params["kw"] = f"%{keyword}%"
-            where.append("(index_code ILIKE :kw OR industry_code ILIKE :kw OR level1 ILIKE :kw OR level2 ILIKE :kw OR level3 ILIKE :kw)")
+            where.append("(index_code ILIKE :kw OR industry_code ILIKE :kw OR industry_name ILIKE :kw)")
         
-        if level == "L1":
-            where.append("level2 IS NULL AND level3 IS NULL")
-        elif level == "L2":
-            where.append("level2 IS NOT NULL AND level3 IS NULL")
-        elif level == "L3":
-            where.append("level3 IS NOT NULL")
+        if index_code:
+            where.append("index_code = :index_code")
+            params["index_code"] = index_code
+        
+        if level:
+            where.append("level = :level")
+            params["level"] = level
+        
+        if parent_code is not None:
+            where.append("parent_code = :parent_code")
+            params["parent_code"] = parent_code
             
         where_sql = " AND ".join(where)
         
@@ -277,18 +284,15 @@ class IndexService:
         sql_data = text(f"""
             SELECT 
                 index_code,
+                industry_name,
+                parent_code,
+                level,
                 industry_code,
-                level1,
-                level2,
-                level3,
-                type,
                 is_pub,
-                reason,
-                count,
                 src
             FROM index.index_classify
             WHERE {where_sql}
-            ORDER BY index_code
+            ORDER BY level, parent_code, index_code
             OFFSET :skip LIMIT :limit
         """)
         rows = session.execute(sql_data, params)

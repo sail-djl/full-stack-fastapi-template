@@ -105,8 +105,10 @@ def get_index_classify(
     session: SessionDep,
     skip: int = 0,
     limit: int = 1000,
+    index_code: str | None = None,
     level: str | None = None,
-    src: str = "sw2021",
+    parent_code: str | None = None,
+    src: str = "SW2021",
     keyword: str | None = None,
 ) -> Any:
     """获取申万行业分类列表"""
@@ -114,7 +116,9 @@ def get_index_classify(
         session=session,
         skip=skip,
         limit=limit,
+        index_code=index_code,
         level=level,
+        parent_code=parent_code,
         src=src,
         keyword=keyword,
     )
@@ -230,8 +234,10 @@ class IndexWeeklySyncPayload(BaseModel):
 
 
 class IndexClassifySyncPayload(BaseModel):
+    index_code: Optional[str] = None
     level: Optional[str] = None
-    src: str = "sw2021"
+    parent_code: Optional[str] = None
+    src: str = "SW2021"
 
 
 class IndexMemberSyncPayload(BaseModel):
@@ -599,9 +605,13 @@ def sync_index_classify(session: SessionDep, payload: IndexClassifySyncPayload) 
         pro._DataApi__http_url = settings.TUSHARE_API_URL
 
     try:
-        params = {"src": payload.src}
+        params = {"src": payload.src.lower()}  # Tushare API 使用小写
+        if payload.index_code:
+            params["index_code"] = payload.index_code
         if payload.level:
             params["level"] = payload.level
+        if payload.parent_code is not None:
+            params["parent_code"] = payload.parent_code
         
         logger.info(f"Fetching index_classify with params: {params}")
         df = pro.index_classify(**params)
@@ -614,6 +624,11 @@ def sync_index_classify(session: SessionDep, payload: IndexClassifySyncPayload) 
         
         df = df.where(pd.notnull(df), None)
         rows = df.to_dict("records")
+        
+        # 转换 src 为大写（SW2014/SW2021）
+        for r in rows:
+            if 'src' in r and r['src']:
+                r['src'] = r['src'].upper()
         
         succ, fail = _upsert_records(session, "index.index_classify", rows, ["index_code"])
         return {"message": "sync triggered", "success": succ, "failed": fail}
