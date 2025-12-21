@@ -76,7 +76,7 @@ class IndexService:
     @staticmethod
     def get_index_daily_list(
         session: Session,
-        ts_code: str | None = None,
+        ts_code: str | list[str] | None = None,
         start_date: str | None = None,
         end_date: str | None = None,
         limit: int = 1000,
@@ -84,13 +84,31 @@ class IndexService:
         """
         获取指数日线行情列表
         从 index.index_daily 表查询
+        支持单个 ts_code 或多个 ts_code（列表或逗号分隔字符串）
         """
         where: list[str] = ["TRUE"]
         params: dict[str, Any] = {"limit": limit}
 
         if ts_code:
-            where.append("ts_code = :ts_code")
-            params["ts_code"] = ts_code
+            # 支持字符串（单个或逗号分隔）、列表
+            if isinstance(ts_code, str):
+                # 如果是逗号分隔的字符串，转换为列表
+                codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+            else:
+                codes = ts_code
+            
+            if codes:
+                if len(codes) == 1:
+                    where.append("ts_code = :ts_code")
+                    params["ts_code"] = codes[0]
+                else:
+                    # 使用 IN 语法，为每个代码创建参数
+                    placeholders = []
+                    for i, code in enumerate(codes):
+                        key = f"ts_code_{i}"
+                        placeholders.append(f":{key}")
+                        params[key] = code
+                    where.append(f"ts_code IN ({', '.join(placeholders)})")
         if start_date:
             where.append("trade_date >= :start_date")
             params["start_date"] = start_date
@@ -130,7 +148,7 @@ class IndexService:
     @staticmethod
     def get_index_dailybasic_list(
         session: Session,
-        ts_code: str | None = None,
+        ts_code: str | list[str] | None = None,
         trade_date: str | None = None,
         start_date: str | None = None,
         end_date: str | None = None,
@@ -139,13 +157,29 @@ class IndexService:
         """
         获取大盘指数每日指标列表
         从 index.index_dailybasic 表查询
+        支持单个 ts_code 或多个 ts_code（列表或逗号分隔字符串）
         """
         where: list[str] = ["TRUE"]
         params: dict[str, Any] = {"limit": limit}
 
         if ts_code:
-            where.append("ts_code = :ts_code")
-            params["ts_code"] = ts_code
+            # 支持字符串（单个或逗号分隔）、列表
+            if isinstance(ts_code, str):
+                codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+            else:
+                codes = ts_code
+            
+            if codes:
+                if len(codes) == 1:
+                    where.append("ts_code = :ts_code")
+                    params["ts_code"] = codes[0]
+                else:
+                    placeholders = []
+                    for i, code in enumerate(codes):
+                        key = f"ts_code_{i}"
+                        placeholders.append(f":{key}")
+                        params[key] = code
+                    where.append(f"ts_code IN ({', '.join(placeholders)})")
         if trade_date:
             where.append("trade_date = :trade_date")
             params["trade_date"] = trade_date
@@ -188,7 +222,7 @@ class IndexService:
     @staticmethod
     def get_index_weekly_list(
         session: Session,
-        ts_code: str | None = None,
+        ts_code: str | list[str] | None = None,
         start_date: str | None = None,
         end_date: str | None = None,
         limit: int = 1000,
@@ -196,13 +230,29 @@ class IndexService:
         """
         获取指数周线行情列表
         从 index.index_weekly 表查询
+        支持单个 ts_code 或多个 ts_code（列表或逗号分隔字符串）
         """
         where: list[str] = ["TRUE"]
         params: dict[str, Any] = {"limit": limit}
 
         if ts_code:
-            where.append("ts_code = :ts_code")
-            params["ts_code"] = ts_code
+            # 支持字符串（单个或逗号分隔）、列表
+            if isinstance(ts_code, str):
+                codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+            else:
+                codes = ts_code
+            
+            if codes:
+                if len(codes) == 1:
+                    where.append("ts_code = :ts_code")
+                    params["ts_code"] = codes[0]
+                else:
+                    placeholders = []
+                    for i, code in enumerate(codes):
+                        key = f"ts_code_{i}"
+                        placeholders.append(f":{key}")
+                        params[key] = code
+                    where.append(f"ts_code IN ({', '.join(placeholders)})")
         if start_date:
             where.append("trade_date >= :start_date")
             params["start_date"] = start_date
@@ -360,7 +410,7 @@ class IndexService:
     @staticmethod
     def get_sw_daily_list(
         session: Session,
-        ts_code: str | None = None,
+        ts_code: str | list[str] | None = None,
         start_date: str | None = None,
         end_date: str | None = None,
         limit: int = 1000,
@@ -368,13 +418,29 @@ class IndexService:
         """
         获取申万行业日线行情列表
         从 index.sw_daily 表查询
+        支持单个 ts_code 或多个 ts_code（列表或逗号分隔字符串）
         """
         where: list[str] = ["TRUE"]
         params: dict[str, Any] = {"limit": limit}
 
         if ts_code:
-            where.append("ts_code = :ts_code")
-            params["ts_code"] = ts_code
+            # 支持字符串（单个或逗号分隔）、列表
+            if isinstance(ts_code, str):
+                codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+            else:
+                codes = ts_code
+            
+            if codes:
+                if len(codes) == 1:
+                    where.append("ts_code = :ts_code")
+                    params["ts_code"] = codes[0]
+                else:
+                    placeholders = []
+                    for i, code in enumerate(codes):
+                        key = f"ts_code_{i}"
+                        placeholders.append(f":{key}")
+                        params[key] = code
+                    where.append(f"ts_code IN ({', '.join(placeholders)})")
         if start_date:
             where.append("trade_date >= :start_date")
             params["start_date"] = start_date
@@ -415,7 +481,7 @@ class IndexService:
     @staticmethod
     def get_index_global_list(
         session: Session,
-        ts_code: str | None = None,
+        ts_code: str | list[str] | None = None,
         start_date: str | None = None,
         end_date: str | None = None,
         limit: int = 1000,
@@ -423,13 +489,29 @@ class IndexService:
         """
         获取国际指数列表
         从 index.index_global 表查询
+        支持单个 ts_code 或多个 ts_code（列表或逗号分隔字符串）
         """
         where: list[str] = ["TRUE"]
         params: dict[str, Any] = {"limit": limit}
 
         if ts_code:
-            where.append("ts_code = :ts_code")
-            params["ts_code"] = ts_code
+            # 支持字符串（单个或逗号分隔）、列表
+            if isinstance(ts_code, str):
+                codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+            else:
+                codes = ts_code
+            
+            if codes:
+                if len(codes) == 1:
+                    where.append("ts_code = :ts_code")
+                    params["ts_code"] = codes[0]
+                else:
+                    placeholders = []
+                    for i, code in enumerate(codes):
+                        key = f"ts_code_{i}"
+                        placeholders.append(f":{key}")
+                        params[key] = code
+                    where.append(f"ts_code IN ({', '.join(placeholders)})")
         if start_date:
             where.append("trade_date >= :start_date")
             params["start_date"] = start_date
@@ -468,16 +550,38 @@ class IndexService:
     @staticmethod
     def get_index_factor_list(
         session: Session,
-        ts_code: str,
+        ts_code: str | list[str],
         start_date: str | None = None,
         end_date: str | None = None,
         limit: int = 1000
     ) -> list[dict[str, Any]]:
         """
         获取指数技术因子数据 (index.index_factor)
+        支持单个 ts_code 或多个 ts_code（列表或逗号分隔字符串）
         """
-        where: list[str] = ["ts_code = :ts_code"]
-        params: dict[str, Any] = {"ts_code": ts_code, "limit": limit}
+        where: list[str] = []
+        params: dict[str, Any] = {"limit": limit}
+        
+        # 处理 ts_code
+        if isinstance(ts_code, str):
+            codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+        else:
+            codes = ts_code
+        
+        if codes:
+            if len(codes) == 1:
+                where.append("ts_code = :ts_code")
+                params["ts_code"] = codes[0]
+            else:
+                placeholders = []
+                for i, code in enumerate(codes):
+                    key = f"ts_code_{i}"
+                    placeholders.append(f":{key}")
+                    params[key] = code
+                where.append(f"ts_code IN ({', '.join(placeholders)})")
+        
+        if not where:
+            where.append("TRUE")
 
         if start_date:
             where.append("trade_date >= :start_date")
