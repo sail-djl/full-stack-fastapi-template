@@ -495,7 +495,10 @@ def sync_index_daily(session: SessionDep, payload: IndexDailySyncPayload) -> Any
 
 @router.post("/dailybasic/sync")
 def sync_index_dailybasic(session: SessionDep, payload: IndexDailybasicSyncPayload) -> Any:
-    """同步大盘指数每日指标"""
+    """
+    同步大盘指数每日指标
+    支持单个 ts_code 或多个 ts_code（逗号分隔，如：000001.SH,399001.SZ）
+    """
     if not settings.TUSHARE_TOKEN:
         raise HTTPException(status_code=400, detail="Tushare token 未配置")
     try:
@@ -528,36 +531,62 @@ def sync_index_dailybasic(session: SessionDep, payload: IndexDailybasicSyncPaylo
                 total_failed += fail
         except Exception as e:
             logger.error(f"Tushare API failed: {e}\n{traceback.format_exc()}")
-    elif payload.ts_code and (payload.start_date or payload.end_date):
-        start_d = _parse_iso_date(payload.start_date) if payload.start_date else date.today() - timedelta(days=365)
-        end_d = _parse_iso_date(payload.end_date) if payload.end_date else date.today()
+    elif payload.ts_code:
+        # 解析多个 ts_code（支持逗号分隔）
+        ts_codes = [c.strip() for c in payload.ts_code.split(',') if c.strip()]
+        if not ts_codes:
+            raise HTTPException(status_code=400, detail="必须指定至少一个指数代码")
         
-        params = {
-            "ts_code": payload.ts_code,
-            "start_date": _to_yyyymmdd(start_d),
-            "end_date": _to_yyyymmdd(end_d)
-        }
-        try:
-            logger.info(f"Fetching index_dailybasic for {payload.ts_code}, range: {params['start_date']} - {params['end_date']}")
-            df = pro.index_dailybasic(**params)
+        # 循环处理每个 ts_code
+        for ts_code in ts_codes:
+            start_d = None
+            if payload.start_date:
+                start_d = _parse_iso_date(payload.start_date)
+            else:
+                last_date = _get_last_date(session, "index.index_dailybasic", ts_code)
+                if last_date:
+                    start_d = last_date + timedelta(days=1)
+                else:
+                    start_d = date.today() - timedelta(days=365)
             
-            if df is not None and not df.empty:
-                df = df.where(pd.notnull(df), None)
-                rows = df.to_dict("records")
-                succ, fail = _upsert_records(session, "index.index_dailybasic", rows, ["ts_code", "trade_date"])
-                total_success += succ
-                total_failed += fail
-        except Exception as e:
-            logger.error(f"Tushare API failed: {e}\n{traceback.format_exc()}")
+            end_d = date.today()
+            if payload.end_date:
+                end_d = _parse_iso_date(payload.end_date)
+            
+            if start_d > end_d:
+                logger.info(f"No new data to sync for {ts_code}")
+                continue
+            
+            params = {
+                "ts_code": ts_code,
+                "start_date": _to_yyyymmdd(start_d),
+                "end_date": _to_yyyymmdd(end_d)
+            }
+            try:
+                logger.info(f"Fetching index_dailybasic for {ts_code}, range: {params['start_date']} - {params['end_date']}")
+                df = pro.index_dailybasic(**params)
+                
+                if df is not None and not df.empty:
+                    df = df.where(pd.notnull(df), None)
+                    rows = df.to_dict("records")
+                    succ, fail = _upsert_records(session, "index.index_dailybasic", rows, ["ts_code", "trade_date"])
+                    total_success += succ
+                    total_failed += fail
+            except Exception as e:
+                logger.error(f"Tushare API failed for {ts_code}: {e}\n{traceback.format_exc()}")
+                total_failed += 1
     else:
-        raise HTTPException(status_code=400, detail="必须指定 trade_date 或 ts_code + start_date/end_date")
+        raise HTTPException(status_code=400, detail="必须指定 trade_date 或 ts_code")
 
     return {"message": "sync triggered", "success": total_success, "failed": total_failed}
 
 
 @router.post("/weekly/sync")
 def sync_index_weekly(session: SessionDep, payload: IndexWeeklySyncPayload) -> Any:
-    """同步指数周线行情"""
+    """
+    同步指数周线行情
+    支持单个 ts_code 或多个 ts_code（逗号分隔，如：000001.SH,399001.SZ）
+    """
     if not settings.TUSHARE_TOKEN:
         raise HTTPException(status_code=400, detail="Tushare token 未配置")
     try:
@@ -575,29 +604,53 @@ def sync_index_weekly(session: SessionDep, payload: IndexWeeklySyncPayload) -> A
     if not payload.ts_code:
         raise HTTPException(status_code=400, detail="必须指定指数代码")
 
+    # 解析多个 ts_code（支持逗号分隔）
+    ts_codes = [c.strip() for c in payload.ts_code.split(',') if c.strip()]
+    if not ts_codes:
+        raise HTTPException(status_code=400, detail="必须指定至少一个指数代码")
+
     total_success = 0
     total_failed = 0
 
-    start_d = _parse_iso_date(payload.start_date) if payload.start_date else date.today() - timedelta(days=365*3)
-    end_d = _parse_iso_date(payload.end_date) if payload.end_date else date.today()
-    
-    params = {
-        "ts_code": payload.ts_code,
-        "start_date": _to_yyyymmdd(start_d),
-        "end_date": _to_yyyymmdd(end_d)
-    }
-    try:
-        logger.info(f"Fetching index_weekly for {payload.ts_code}, range: {params['start_date']} - {params['end_date']}")
-        df = pro.index_weekly(**params)
+    # 循环处理每个 ts_code
+    for ts_code in ts_codes:
+        # 确定时间范围
+        start_d = None
+        if payload.start_date:
+            start_d = _parse_iso_date(payload.start_date)
+        else:
+            last_date = _get_last_date(session, "index.index_weekly", ts_code)
+            if last_date:
+                start_d = last_date + timedelta(days=1)
+            else:
+                start_d = date.today() - timedelta(days=365*3)
         
-        if df is not None and not df.empty:
-            df = df.where(pd.notnull(df), None)
-            rows = df.to_dict("records")
-            succ, fail = _upsert_records(session, "index.index_weekly", rows, ["ts_code", "trade_date"])
-            total_success += succ
-            total_failed += fail
-    except Exception as e:
-        logger.error(f"Tushare API failed: {e}\n{traceback.format_exc()}")
+        end_d = date.today()
+        if payload.end_date:
+            end_d = _parse_iso_date(payload.end_date)
+            
+        if start_d > end_d:
+            logger.info(f"No new data to sync for {ts_code}")
+            continue
+        
+        params = {
+            "ts_code": ts_code,
+            "start_date": _to_yyyymmdd(start_d),
+            "end_date": _to_yyyymmdd(end_d)
+        }
+        try:
+            logger.info(f"Fetching index_weekly for {ts_code}, range: {params['start_date']} - {params['end_date']}")
+            df = pro.index_weekly(**params)
+            
+            if df is not None and not df.empty:
+                df = df.where(pd.notnull(df), None)
+                rows = df.to_dict("records")
+                succ, fail = _upsert_records(session, "index.index_weekly", rows, ["ts_code", "trade_date"])
+                total_success += succ
+                total_failed += fail
+        except Exception as e:
+            logger.error(f"Tushare API failed for {ts_code}: {e}\n{traceback.format_exc()}")
+            total_failed += 1
 
     return {"message": "sync triggered", "success": total_success, "failed": total_failed}
 
