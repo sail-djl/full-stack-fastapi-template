@@ -1,0 +1,754 @@
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:37:09 CST)" was missed by 0:03:05.957028
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:42:09 CST)" (scheduled at 2025-12-22 00:37:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 00:37:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:42:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:47:09 CST)" (scheduled at 2025-12-22 00:42:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 00:42:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:47:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:52:09 CST)" (scheduled at 2025-12-22 00:47:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 00:47:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:52:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:57:09 CST)" (scheduled at 2025-12-22 00:52:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 00:52:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 00:57:09 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:02:09 CST)" was missed by 0:00:43.881934
+WARNING:     apscheduler.executors.default:Run time of job "每日定时任务 (trigger: cron[hour='2', minute='0'], next run at: 2025-12-23 02:00:00 CST)" was missed by 5:57:53.294955
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:07:09 CST)" (scheduled at 2025-12-22 08:02:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 08:02:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:07:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:12:09 CST)" (scheduled at 2025-12-22 08:07:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 08:07:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:12:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:17:09 CST)" (scheduled at 2025-12-22 08:12:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 08:12:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:17:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:22:09 CST)" (scheduled at 2025-12-22 08:17:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 08:17:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 08:22:09 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:07:09 CST)" was missed by 0:00:07.841922
+WARNING:     apscheduler.executors.default:Run time of job "每周任务（周一9点） (trigger: cron[day_of_week='mon', hour='9', minute='0'], next run at: 2025-12-29 09:00:00 CST)" was missed by 5:02:17.254422
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:12:09 CST)" (scheduled at 2025-12-22 14:07:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:07:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:12:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:17:09 CST)" (scheduled at 2025-12-22 14:12:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:12:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:17:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:22:09 CST)" (scheduled at 2025-12-22 14:17:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:17:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:22:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:27:09 CST)" (scheduled at 2025-12-22 14:22:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:22:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:27:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:32:09 CST)" (scheduled at 2025-12-22 14:27:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:27:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:32:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:37:09 CST)" (scheduled at 2025-12-22 14:32:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:32:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:37:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:42:09 CST)" (scheduled at 2025-12-22 14:37:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:37:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:42:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:47:09 CST)" (scheduled at 2025-12-22 14:42:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:42:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:47:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:52:09 CST)" (scheduled at 2025-12-22 14:47:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:47:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:52:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:57:09 CST)" (scheduled at 2025-12-22 14:52:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:52:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 14:57:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:02:09 CST)" (scheduled at 2025-12-22 14:57:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 14:57:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:02:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:07:09 CST)" (scheduled at 2025-12-22 15:02:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:02:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:07:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:12:09 CST)" (scheduled at 2025-12-22 15:07:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:07:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:12:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:17:09 CST)" (scheduled at 2025-12-22 15:12:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:12:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:17:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:22:09 CST)" (scheduled at 2025-12-22 15:17:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:17:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:22:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:27:09 CST)" (scheduled at 2025-12-22 15:22:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:22:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:27:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:32:09 CST)" (scheduled at 2025-12-22 15:27:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:27:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:32:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:37:09 CST)" (scheduled at 2025-12-22 15:32:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:32:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:37:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:42:09 CST)" (scheduled at 2025-12-22 15:37:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:37:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:42:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:47:09 CST)" (scheduled at 2025-12-22 15:42:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:42:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:47:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:52:09 CST)" (scheduled at 2025-12-22 15:47:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:47:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:52:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:57:09 CST)" (scheduled at 2025-12-22 15:52:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:52:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 15:57:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:02:09 CST)" (scheduled at 2025-12-22 15:57:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 15:57:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:02:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:07:09 CST)" (scheduled at 2025-12-22 16:02:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:02:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:07:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:12:09 CST)" (scheduled at 2025-12-22 16:07:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:07:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:12:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:17:09 CST)" (scheduled at 2025-12-22 16:12:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:12:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:17:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:22:09 CST)" (scheduled at 2025-12-22 16:17:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:17:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:22:09 CST)" executed successfully
+INFO:     app.api.routes.index:Sync index_global request received. Payload: ts_code=None start_date='2025-11-22' end_date='2025-12-22'
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:27:09 CST)" (scheduled at 2025-12-22 16:22:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:22:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:27:09 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:32:09 CST)" (scheduled at 2025-12-22 16:27:09.412500+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:27:09
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:32:09 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 16:32:49.566959+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.api.routes.index:Sync index_global request received. Payload: ts_code=None start_date='2025-11-22' end_date='2025-12-22'
+INFO:     app.api.routes.index:Fetching index_global for all indices, range: 20251122 - 20251222
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:37:49 CST)" (scheduled at 2025-12-22 16:32:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:32:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:37:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:42:49 CST)" (scheduled at 2025-12-22 16:37:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:37:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:42:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:47:49 CST)" (scheduled at 2025-12-22 16:42:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:42:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:47:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:52:49 CST)" (scheduled at 2025-12-22 16:47:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:47:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:52:49 CST)" executed successfully
+INFO:     app.api.routes.index:Sync index_global request received. Payload: ts_code=None start_date='2024-12-22' end_date='2025-12-22'
+INFO:     app.api.routes.index:Fetching index_global for all indices, range: 20241222 - 20251222
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:57:49 CST)" (scheduled at 2025-12-22 16:52:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:52:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 16:57:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:02:49 CST)" (scheduled at 2025-12-22 16:57:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 16:57:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:02:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:07:49 CST)" (scheduled at 2025-12-22 17:02:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:02:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:07:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:12:49 CST)" (scheduled at 2025-12-22 17:07:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:07:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:12:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:17:49 CST)" (scheduled at 2025-12-22 17:12:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:12:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:17:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:22:49 CST)" (scheduled at 2025-12-22 17:17:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:17:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:22:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:27:49 CST)" (scheduled at 2025-12-22 17:22:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:22:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:27:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:32:49 CST)" (scheduled at 2025-12-22 17:27:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:27:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:32:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:37:49 CST)" (scheduled at 2025-12-22 17:32:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:32:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:37:49 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:42:49 CST)" (scheduled at 2025-12-22 17:37:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:37:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:42:49 CST)" executed successfully
+INFO:     app.api.routes.index:Sync idx_factor_pro request received. Payload: ts_code=None start_date='2024-12-22' end_date='2025-12-22'
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:47:49 CST)" (scheduled at 2025-12-22 17:42:49.566959+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:42:49
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:47:49 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 17:50:15.374927+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 17:50:17.181050+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 17:50:23.918768+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.api.routes.index:Sync idx_factor_pro request received. Payload: ts_code=None start_date='2024-12-22' end_date='2025-12-22'
+INFO:     app.api.routes.index:Fetching idx_factor_pro for all indices, range: 20241222 - 20251222
+ERROR:     app.api.routes.index:Tushare API failed: 参数校验失败, ts_code,trade_date至少输入一个参数
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\api\routes\index.py", line 975, in sync_index_factor
+    df = pro.idx_factor_pro(**params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\tushare\pro\client.py", line 45, in query
+    raise Exception(result['msg'])
+Exception: 参数校验失败, ts_code,trade_date至少输入一个参数
+
+INFO:     app.api.routes.index:Sync idx_factor_pro request received. Payload: ts_code='000001.CJ' start_date='2024-12-22' end_date='2025-12-22'
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000001.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Sync idx_factor_pro request received. Payload: ts_code='000001.CJ,000001.SH,000002.CJ,000002.SH,000003.CJ,000003.SH,000004.CJ,000004.SH,000005.CJ,000005.SH,000006.CJ,000006.SH,000007.CJ,000007.SH,000008.CJ,000008.SH,000009.CJ,000009.SH,000010.CJ,000010.SH' start_date='2024-12-22' end_date='2025-12-22'
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000001.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000001.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000002.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000002.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000003.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000003.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000004.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000004.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000005.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000005.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000006.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000006.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000007.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000007.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000008.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000008.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000009.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000009.SH, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000010.CJ, range: 20241222 - 20251222
+INFO:     app.api.routes.index:Fetching idx_factor_pro for 000010.SH, range: 20241222 - 20251222
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:55:23 CST)" (scheduled at 2025-12-22 17:50:23.918768+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:50:23
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 17:55:23 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:00:23 CST)" (scheduled at 2025-12-22 17:55:23.918768+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 17:55:23
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:00:23 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:05:23 CST)" (scheduled at 2025-12-22 18:00:23.918768+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:00:23
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:05:23 CST)" executed successfully
+INFO:     app.api.routes.index:Sync idx_factor_pro request received. Payload: ts_code=None start_date='2025-12-15' end_date='2025-12-22'
+INFO:     app.api.routes.index:Fetching idx_factor_pro for all indices, range: 20251215 - 20251222
+ERROR:     app.api.routes.index:Tushare API failed: 参数校验失败, ts_code,trade_date至少输入一个参数
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\api\routes\index.py", line 975, in sync_index_factor
+    df = pro.idx_factor_pro(**params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\tushare\pro\client.py", line 45, in query
+    raise Exception(result['msg'])
+Exception: 参数校验失败, ts_code,trade_date至少输入一个参数
+
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 18:08:40.144395+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 18:09:44.963485+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 18:09:46.745303+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 18:09:51.219772+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.api.routes.index:Sync idx_factor_pro request received. Payload: ts_code=None trade_date='2025-11-12' start_date=None end_date=None
+INFO:     app.api.routes.index:Fetching idx_factor_pro for trade_date 20251112, params: {'trade_date': '20251112'}
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:14:51 CST)" (scheduled at 2025-12-22 18:09:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:09:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:14:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:19:51 CST)" (scheduled at 2025-12-22 18:14:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:14:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:19:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:24:51 CST)" (scheduled at 2025-12-22 18:19:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:19:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:24:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:29:51 CST)" (scheduled at 2025-12-22 18:24:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:24:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:29:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:34:51 CST)" (scheduled at 2025-12-22 18:29:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:29:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:34:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:39:51 CST)" (scheduled at 2025-12-22 18:34:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:34:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:39:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:44:51 CST)" (scheduled at 2025-12-22 18:39:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:39:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:44:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:49:51 CST)" (scheduled at 2025-12-22 18:44:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:44:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:49:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:54:51 CST)" (scheduled at 2025-12-22 18:49:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:49:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:54:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:59:51 CST)" (scheduled at 2025-12-22 18:54:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:54:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 18:59:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:04:51 CST)" (scheduled at 2025-12-22 18:59:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 18:59:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:04:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:09:51 CST)" (scheduled at 2025-12-22 19:04:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:04:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:09:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:14:51 CST)" (scheduled at 2025-12-22 19:09:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:09:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:14:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:19:51 CST)" (scheduled at 2025-12-22 19:14:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:14:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:19:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:24:51 CST)" (scheduled at 2025-12-22 19:19:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:19:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:24:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:29:51 CST)" (scheduled at 2025-12-22 19:24:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:24:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:29:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:34:51 CST)" (scheduled at 2025-12-22 19:29:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:29:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:34:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:39:51 CST)" (scheduled at 2025-12-22 19:34:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:34:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:39:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:44:51 CST)" (scheduled at 2025-12-22 19:39:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:39:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:44:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:49:51 CST)" (scheduled at 2025-12-22 19:44:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:44:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:49:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:54:51 CST)" (scheduled at 2025-12-22 19:49:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:49:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:54:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:59:51 CST)" (scheduled at 2025-12-22 19:54:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:54:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 19:59:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:04:51 CST)" (scheduled at 2025-12-22 19:59:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 19:59:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:04:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:09:51 CST)" (scheduled at 2025-12-22 20:04:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:04:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:09:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:14:51 CST)" (scheduled at 2025-12-22 20:09:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:09:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:14:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:19:51 CST)" (scheduled at 2025-12-22 20:14:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:14:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:19:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:24:51 CST)" (scheduled at 2025-12-22 20:19:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:19:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:24:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:29:51 CST)" (scheduled at 2025-12-22 20:24:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:24:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:29:51 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:34:51 CST)" (scheduled at 2025-12-22 20:29:51.219772+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:29:51
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:34:51 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 20:36:19.152887+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 20:36:52.562560+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 20:38:57.569409+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:43:57 CST)" (scheduled at 2025-12-22 20:38:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:38:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:43:57 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:48:57 CST)" (scheduled at 2025-12-22 20:43:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:43:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:48:57 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:53:57 CST)" (scheduled at 2025-12-22 20:48:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:48:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:53:57 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:58:57 CST)" (scheduled at 2025-12-22 20:53:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:53:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 20:58:57 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:03:57 CST)" (scheduled at 2025-12-22 20:58:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 20:58:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:03:57 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:08:57 CST)" (scheduled at 2025-12-22 21:03:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:03:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:08:57 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:13:57 CST)" (scheduled at 2025-12-22 21:08:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:08:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:13:57 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:18:57 CST)" (scheduled at 2025-12-22 21:13:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:13:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:18:57 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:23:57 CST)" (scheduled at 2025-12-22 21:18:57.569409+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:18:57
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:23:57 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 21:24:12.226275+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 21:29:11.755640+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:34:11 CST)" (scheduled at 2025-12-22 21:29:11.755640+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:29:11
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:34:11 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:39:11 CST)" (scheduled at 2025-12-22 21:34:11.755640+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:34:11
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:39:11 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:44:11 CST)" (scheduled at 2025-12-22 21:39:11.755640+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:39:11
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:44:11 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:49:11 CST)" (scheduled at 2025-12-22 21:44:11.755640+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:44:11
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:49:11 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 21:50:32.722998+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+WARNING:     passlib.handlers.bcrypt:(trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:55:32 CST)" (scheduled at 2025-12-22 21:50:32.722998+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:50:32
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 21:55:32 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:00:32 CST)" (scheduled at 2025-12-22 21:55:32.722998+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 21:55:32
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:00:32 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:05:32 CST)" (scheduled at 2025-12-22 22:00:32.722998+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 22:00:32
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:05:32 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 22:08:10.632777+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 22:08:15.548514+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 22:13:45.467881+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 22:15:47.660832+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 22:19:13.107239+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 22:20:22.452544+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:25:22 CST)" (scheduled at 2025-12-22 22:20:22.452544+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 22:20:22
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:25:22 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:30:22 CST)" (scheduled at 2025-12-22 22:25:22.452544+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 22:25:22
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:30:22 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:35:22 CST)" (scheduled at 2025-12-22 22:30:22.452544+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 22:30:22
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:35:22 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:40:22 CST)" (scheduled at 2025-12-22 22:35:22.452544+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 22:35:22
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:40:22 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:45:22 CST)" (scheduled at 2025-12-22 22:40:22.452544+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 22:40:22
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:45:22 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-22 22:50:02.084658+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:55:02 CST)" (scheduled at 2025-12-22 22:50:02.084658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 22:50:02
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 22:55:02 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:00:02 CST)" (scheduled at 2025-12-22 22:55:02.084658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 22:55:02
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:00:02 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:05:02 CST)" (scheduled at 2025-12-22 23:00:02.084658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 23:00:02
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:05:02 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:10:02 CST)" (scheduled at 2025-12-22 23:05:02.084658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 23:05:02
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:10:02 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:15:02 CST)" (scheduled at 2025-12-22 23:10:02.084658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 23:10:02
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:15:02 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:20:02 CST)" (scheduled at 2025-12-22 23:15:02.084658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 23:15:02
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:20:02 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:25:02 CST)" (scheduled at 2025-12-22 23:20:02.084658+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-22 23:20:02
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-22 23:25:02 CST)" executed successfully
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-23 00:02:46.629156+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-23 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.api.routes.index:Sync index_daily request received. Payload: ts_code='000001.SH' start_date='2025-11-22' end_date='2025-12-22'
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20251122 - 20251222
