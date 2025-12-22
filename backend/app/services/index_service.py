@@ -550,7 +550,7 @@ class IndexService:
     @staticmethod
     def get_index_factor_list(
         session: Session,
-        ts_code: str | list[str],
+        ts_code: str | list[str] | None = None,
         start_date: str | None = None,
         end_date: str | None = None,
         limit: int = 1000
@@ -558,15 +558,19 @@ class IndexService:
         """
         获取指数技术因子数据 (index.index_factor)
         支持单个 ts_code 或多个 ts_code（列表或逗号分隔字符串）
+        如果不指定 ts_code，返回所有指数技术因子数据
         """
         where: list[str] = []
         params: dict[str, Any] = {"limit": limit}
         
         # 处理 ts_code
-        if isinstance(ts_code, str):
-            codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+        if ts_code:
+            if isinstance(ts_code, str):
+                codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+            else:
+                codes = ts_code
         else:
-            codes = ts_code
+            codes = []
         
         if codes:
             if len(codes) == 1:

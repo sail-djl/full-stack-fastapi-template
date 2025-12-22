@@ -194,7 +194,7 @@ def get_index_global(
 @router.get("/factor")
 def get_index_factor(
     session: SessionDep,
-    ts_code: str,
+    ts_code: str | None = None,
     start_date: str | None = None,
     end_date: str | None = None,
     limit: int = 1000,
@@ -265,6 +265,7 @@ class IndexGlobalSyncPayload(BaseModel):
 
 class IndexFactorSyncPayload(BaseModel):
     ts_code: Optional[str] = None
+    trade_date: Optional[str] = None
     start_date: Optional[str] = None
     end_date: Optional[str] = None
 
@@ -830,7 +831,11 @@ def sync_sw_daily(session: SessionDep, payload: SwDailySyncPayload) -> Any:
 
 @router.post("/global/sync")
 def sync_index_global(session: SessionDep, payload: IndexGlobalSyncPayload) -> Any:
-    """同步国际指数"""
+    """
+    同步国际指数
+    支持单个 ts_code 或多个 ts_code（逗号分隔，如：XIN9,HSI,DJI）
+    如果不指定 ts_code，将尝试获取所有国际指数数据
+    """
     if not settings.TUSHARE_TOKEN:
         raise HTTPException(status_code=400, detail="Tushare token 未配置")
     try:
@@ -845,39 +850,69 @@ def sync_index_global(session: SessionDep, payload: IndexGlobalSyncPayload) -> A
     if settings.TUSHARE_API_URL:
         pro._DataApi__http_url = settings.TUSHARE_API_URL
 
-    if not payload.ts_code:
-        raise HTTPException(status_code=400, detail="必须指定指数代码")
-
     total_success = 0
     total_failed = 0
 
     start_d = _parse_iso_date(payload.start_date) if payload.start_date else date.today() - timedelta(days=365)
     end_d = _parse_iso_date(payload.end_date) if payload.end_date else date.today()
     
-    params = {
-        "ts_code": payload.ts_code,
-        "start_date": _to_yyyymmdd(start_d),
-        "end_date": _to_yyyymmdd(end_d)
-    }
-    try:
-        logger.info(f"Fetching index_global for {payload.ts_code}, range: {params['start_date']} - {params['end_date']}")
-        df = pro.index_global(**params)
+    # 如果指定了 ts_code，只同步指定的指数
+    if payload.ts_code:
+        # 解析多个 ts_code（支持逗号分隔）
+        ts_codes = [c.strip() for c in payload.ts_code.split(',') if c.strip()]
+        if not ts_codes:
+            raise HTTPException(status_code=400, detail="必须指定至少一个指数代码")
         
-        if df is not None and not df.empty:
-            df = df.where(pd.notnull(df), None)
-            rows = df.to_dict("records")
-            succ, fail = _upsert_records(session, "index.index_global", rows, ["ts_code", "trade_date"])
-            total_success += succ
-            total_failed += fail
-    except Exception as e:
-        logger.error(f"Tushare API failed: {e}\n{traceback.format_exc()}")
+        for ts_code in ts_codes:
+            params = {
+                "ts_code": ts_code,
+                "start_date": _to_yyyymmdd(start_d),
+                "end_date": _to_yyyymmdd(end_d)
+            }
+            try:
+                logger.info(f"Fetching index_global for {ts_code}, range: {params['start_date']} - {params['end_date']}")
+                df = pro.index_global(**params)
+                
+                if df is not None and not df.empty:
+                    df = df.where(pd.notnull(df), None)
+                    rows = df.to_dict("records")
+                    succ, fail = _upsert_records(session, "index.index_global", rows, ["ts_code", "trade_date"])
+                    total_success += succ
+                    total_failed += fail
+            except Exception as e:
+                logger.error(f"Tushare API failed for {ts_code}: {e}\n{traceback.format_exc()}")
+                total_failed += 1
+    else:
+        # 如果没有指定 ts_code，尝试调用 API（不传 ts_code 参数）
+        # 如果 Tushare API 不支持，这里会抛出异常
+        params = {
+            "start_date": _to_yyyymmdd(start_d),
+            "end_date": _to_yyyymmdd(end_d)
+        }
+        try:
+            logger.info(f"Fetching index_global for all indices, range: {params['start_date']} - {params['end_date']}")
+            df = pro.index_global(**params)
+            
+            if df is not None and not df.empty:
+                df = df.where(pd.notnull(df), None)
+                rows = df.to_dict("records")
+                succ, fail = _upsert_records(session, "index.index_global", rows, ["ts_code", "trade_date"])
+                total_success += succ
+                total_failed += fail
+        except Exception as e:
+            logger.error(f"Tushare API failed: {e}\n{traceback.format_exc()}")
+            raise HTTPException(status_code=400, detail=f"同步失败：{str(e)}。如果不指定指数代码，请确保 Tushare API 支持获取所有国际指数数据。")
 
     return {"message": "sync triggered", "success": total_success, "failed": total_failed}
 
 
 @router.post("/factor/sync")
 def sync_index_factor(session: SessionDep, payload: IndexFactorSyncPayload) -> Any:
-    """同步指数技术因子"""
+    """
+    同步指数技术因子
+    支持单个 ts_code 或多个 ts_code（逗号分隔，如：000001.SH,399001.SZ）
+    根据 Tushare API 要求，ts_code 和 trade_date 至少需要提供一个
+    """
     if not settings.TUSHARE_TOKEN:
         raise HTTPException(status_code=400, detail="Tushare token 未配置")
     try:
@@ -892,37 +927,86 @@ def sync_index_factor(session: SessionDep, payload: IndexFactorSyncPayload) -> A
     if settings.TUSHARE_API_URL:
         pro._DataApi__http_url = settings.TUSHARE_API_URL
 
-    if not payload.ts_code:
-        raise HTTPException(status_code=400, detail="必须指定指数代码")
+    # 验证：至少提供 ts_code 或 trade_date 中的一个
+    if not payload.ts_code and not payload.trade_date:
+        raise HTTPException(status_code=400, detail="ts_code 和 trade_date 至少需要提供一个")
 
     total_success = 0
     total_failed = 0
 
     start_d = _parse_iso_date(payload.start_date) if payload.start_date else date.today() - timedelta(days=365)
     end_d = _parse_iso_date(payload.end_date) if payload.end_date else date.today()
+    trade_date_str = _to_yyyymmdd(_parse_iso_date(payload.trade_date)) if payload.trade_date else None
     
-    params = {
-        "ts_code": payload.ts_code,
-        "start_date": _to_yyyymmdd(start_d),
-        "end_date": _to_yyyymmdd(end_d)
-    }
-    try:
-        logger.info(f"Fetching idx_factor_pro for {payload.ts_code}, range: {params['start_date']} - {params['end_date']}")
-        df = pro.idx_factor_pro(**params)
+    # 如果指定了 ts_code，只同步指定的指数
+    if payload.ts_code:
+        # 解析多个 ts_code（支持逗号分隔）
+        ts_codes = [c.strip() for c in payload.ts_code.split(',') if c.strip()]
+        if not ts_codes:
+            raise HTTPException(status_code=400, detail="必须指定至少一个指数代码")
         
-        if df is not None and not df.empty:
-            # 数据清洗
-            numeric_cols = df.columns.drop(['ts_code', 'trade_date'])
-            for col in numeric_cols:
-                df[col] = pd.to_numeric(df[col], errors='coerce')
+        for ts_code in ts_codes:
+            params: dict[str, Any] = {
+                "ts_code": ts_code,
+            }
+            # 如果指定了 trade_date，优先使用 trade_date
+            if trade_date_str:
+                params["trade_date"] = trade_date_str
+            else:
+                # 否则使用日期范围
+                params["start_date"] = _to_yyyymmdd(start_d)
+                params["end_date"] = _to_yyyymmdd(end_d)
             
-            df = df.where(pd.notnull(df), None)
-            rows = df.to_dict("records")
-            succ, fail = _upsert_records(session, "index.index_factor", rows, ["ts_code", "trade_date"])
-            total_success += succ
-            total_failed += fail
-    except Exception as e:
-        logger.error(f"Tushare API failed: {e}\n{traceback.format_exc()}")
+            try:
+                logger.info(f"Fetching idx_factor_pro for {ts_code}, params: {params}")
+                df = pro.idx_factor_pro(**params)
+                
+                if df is not None and not df.empty:
+                    # 数据清洗
+                    numeric_cols = df.columns.drop(['ts_code', 'trade_date'])
+                    for col in numeric_cols:
+                        df[col] = pd.to_numeric(df[col], errors='coerce')
+                    
+                    df = df.where(pd.notnull(df), None)
+                    rows = df.to_dict("records")
+                    succ, fail = _upsert_records(session, "index.index_factor", rows, ["ts_code", "trade_date"])
+                    total_success += succ
+                    total_failed += fail
+            except Exception as e:
+                logger.error(f"Tushare API failed for {ts_code}: {e}\n{traceback.format_exc()}")
+                total_failed += 1
+    else:
+        # 如果没有指定 ts_code，必须提供 trade_date
+        if not trade_date_str:
+            raise HTTPException(status_code=400, detail="如果不指定指数代码，必须提供交易日期")
+        
+        params = {
+            "trade_date": trade_date_str,
+        }
+        # 如果还提供了日期范围，也加上（虽然 trade_date 优先级更高）
+        if payload.start_date:
+            params["start_date"] = _to_yyyymmdd(start_d)
+        if payload.end_date:
+            params["end_date"] = _to_yyyymmdd(end_d)
+        
+        try:
+            logger.info(f"Fetching idx_factor_pro for trade_date {trade_date_str}, params: {params}")
+            df = pro.idx_factor_pro(**params)
+            
+            if df is not None and not df.empty:
+                # 数据清洗
+                numeric_cols = df.columns.drop(['ts_code', 'trade_date'])
+                for col in numeric_cols:
+                    df[col] = pd.to_numeric(df[col], errors='coerce')
+                
+                df = df.where(pd.notnull(df), None)
+                rows = df.to_dict("records")
+                succ, fail = _upsert_records(session, "index.index_factor", rows, ["ts_code", "trade_date"])
+                total_success += succ
+                total_failed += fail
+        except Exception as e:
+            logger.error(f"Tushare API failed: {e}\n{traceback.format_exc()}")
+            raise HTTPException(status_code=400, detail=f"同步失败：{str(e)}")
 
     return {"message": "sync triggered", "success": total_success, "failed": total_failed}
 
