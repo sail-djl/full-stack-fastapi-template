@@ -24,16 +24,21 @@ def get_index_basic(
     skip: int = 0,
     limit: int = 1000,
     keyword: str | None = None,
+    ts_code: str | None = None,
     market: str | None = None,
     publisher: str | None = None,
     category: str | None = None,
 ) -> Any:
-    """获取指数基础信息列表"""
+    """
+    获取指数基础信息列表
+    支持单个 ts_code 或多个 ts_code（逗号分隔，如：000001.SH,399001.SZ）
+    """
     items, total = IndexService.get_index_basic_list(
         session=session,
         skip=skip,
         limit=limit,
         keyword=keyword,
+        ts_code=ts_code,
         market=market,
         publisher=publisher,
         category=category,

@@ -14,6 +14,7 @@ class IndexService:
         skip: int = 0,
         limit: int = 1000,
         keyword: str | None = None,
+        ts_code: str | list[str] | None = None,
         market: str | None = None,
         publisher: str | None = None,
         category: str | None = None,
@@ -21,9 +22,29 @@ class IndexService:
         """
         获取指数基础信息列表
         从 index.index_basic 表查询
+        支持单个 ts_code 或多个 ts_code（列表或逗号分隔字符串）
         """
         params: dict[str, Any] = {"skip": skip, "limit": limit}
         where: list[str] = ["TRUE"]
+        
+        if ts_code:
+            # 支持字符串（单个或逗号分隔）、列表
+            if isinstance(ts_code, str):
+                codes = [c.strip() for c in ts_code.split(',') if c.strip()]
+            else:
+                codes = ts_code
+            
+            if codes:
+                if len(codes) == 1:
+                    where.append("ts_code = :ts_code")
+                    params["ts_code"] = codes[0]
+                else:
+                    placeholders = []
+                    for i, code in enumerate(codes):
+                        key = f"ts_code_{i}"
+                        placeholders.append(f":{key}")
+                        params[key] = code
+                    where.append(f"ts_code IN ({', '.join(placeholders)})")
         
         if keyword:
             params["kw"] = f"%{keyword}%"
