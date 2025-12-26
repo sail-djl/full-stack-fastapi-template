@@ -1,0 +1,790 @@
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:08:31 CST)" was missed by 0:04:27.126301
+WARNING:     apscheduler.executors.default:Run time of job "每日定时任务 (trigger: cron[hour='2', minute='0'], next run at: 2025-12-27 02:00:00 CST)" was missed by 6:07:58.972006
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:13:31 CST)" (scheduled at 2025-12-26 08:08:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 08:08:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:13:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:18:31 CST)" (scheduled at 2025-12-26 08:13:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 08:13:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:18:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:23:31 CST)" (scheduled at 2025-12-26 08:18:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 08:18:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:23:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:28:31 CST)" (scheduled at 2025-12-26 08:23:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 08:23:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:28:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:33:31 CST)" (scheduled at 2025-12-26 08:28:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 08:28:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:33:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:38:31 CST)" (scheduled at 2025-12-26 08:33:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 08:33:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 08:38:31 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 13:53:31 CST)" was missed by 0:00:39.282362
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:18:31 CST)" was missed by 0:00:57.885255
+ERROR:     app.services.macro_service:Failed to create schema: (psycopg.OperationalError) sending query failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+[SQL: CREATE SCHEMA IF NOT EXISTS macro]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:23:31 CST)" (scheduled at 2025-12-26 20:18:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:18:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:23:31 CST)" executed successfully
+INFO:     app.services.macro_service:开始同步 shibor_lpr，表: macro.lpr，参数: {'start_date': '20201226', 'end_date': '20251226'}
+INFO:     app.services.macro_service:Tushare API shibor_lpr 返回 58 条记录
+INFO:     app.services.macro_service:DataFrame 列名: ['date', '1y', '5y']
+INFO:     app.services.macro_service:日期字段 date 格式转换完成
+INFO:     app.services.macro_service:数据转换完成，共 58 条记录
+INFO:     app.services.macro_service:原始字段名: ['date', '1y', '5y']
+INFO:     app.services.macro_service:应用字段名映射: {'1y': 'rate_1y', '5y': 'rate_5y'}
+INFO:     app.services.macro_service:映射后第一条记录的字段: ['date', 'rate_1y', 'rate_5y']
+INFO:     app.services.macro_service:Upsert记录字段: ['date', 'rate_1y', 'rate_5y']
+INFO:     app.services.macro_service:Upsert使用字段: ['date', 'rate_1y', 'rate_5y']，主键要求: ['date']
+INFO:     app.services.macro_service:数据同步完成，表: macro.lpr，成功: 58，失败: 0
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:28:31 CST)" (scheduled at 2025-12-26 20:23:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:23:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:28:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:33:31 CST)" (scheduled at 2025-12-26 20:28:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:28:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:33:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:38:31 CST)" (scheduled at 2025-12-26 20:33:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:33:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:38:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:43:31 CST)" (scheduled at 2025-12-26 20:38:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:38:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:43:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:48:31 CST)" (scheduled at 2025-12-26 20:43:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:43:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:48:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:53:31 CST)" (scheduled at 2025-12-26 20:48:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:48:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:53:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:58:31 CST)" (scheduled at 2025-12-26 20:53:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:53:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 20:58:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 21:03:31 CST)" (scheduled at 2025-12-26 20:58:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 20:58:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 21:03:31 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:33:31 CST)" was missed by 0:00:28.076804
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:38:31 CST)" (scheduled at 2025-12-26 22:33:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 22:33:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:38:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:43:31 CST)" (scheduled at 2025-12-26 22:38:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 22:38:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:43:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:48:31 CST)" (scheduled at 2025-12-26 22:43:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 22:43:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:48:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:53:31 CST)" (scheduled at 2025-12-26 22:48:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 22:48:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:53:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:58:31 CST)" (scheduled at 2025-12-26 22:53:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 22:53:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 22:58:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:03:31 CST)" (scheduled at 2025-12-26 22:58:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 22:58:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:03:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:08:31 CST)" (scheduled at 2025-12-26 23:03:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 23:03:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:08:31 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:13:31 CST)" (scheduled at 2025-12-26 23:08:31.779877+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 23:08:31
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:13:31 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:14:05.943374+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.services.futures_service:开始同步 fut_basic，表: futures.fut_basic，参数: {'exchange': 'CFFEX'}
+INFO:     app.services.futures_service:Tushare API fut_basic 返回 680 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:日期字段 list_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 delist_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 last_ddate 格式转换完成
+INFO:     app.services.futures_service:数据转换完成，共 680 条记录
+INFO:     app.services.futures_service:原始字段名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert使用字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']，主键要求: ['ts_code']
+INFO:     app.services.futures_service:数据同步完成，表: futures.fut_basic，成功: 680，失败: 0
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+INFO:     app.services.futures_service:开始同步 trade_cal，表: futures.trade_cal，参数: {'exchange': 'CFFEX'}
+INFO:     app.services.futures_service:Tushare API trade_cal 返回 4383 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['exchange', 'cal_date', 'is_open', 'pretrade_date']
+INFO:     app.services.futures_service:日期字段 cal_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 pretrade_date 格式转换完成
+INFO:     app.services.futures_service:数据转换完成，共 4383 条记录
+INFO:     app.services.futures_service:原始字段名: ['exchange', 'cal_date', 'is_open', 'pretrade_date']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['exchange', 'cal_date', 'is_open', 'pretrade_date']
+INFO:     app.services.futures_service:Upsert记录字段: ['exchange', 'cal_date', 'is_open', 'pretrade_date']
+INFO:     app.services.futures_service:Upsert使用字段: ['exchange', 'cal_date', 'is_open', 'pretrade_date']，主键要求: ['exchange', 'cal_date']
+INFO:     app.services.futures_service:数据同步完成，表: futures.trade_cal，成功: 4383，失败: 0
+INFO:     app.services.futures_service:开始同步 fut_daily，表: futures.fut_daily，参数: {'exchange': 'CFFEX'}
+INFO:     app.services.futures_service:Tushare API fut_daily 返回 2000 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']
+INFO:     app.services.futures_service:日期字段 trade_date 格式转换完成
+INFO:     app.services.futures_service:数据转换完成，共 2000 条记录
+INFO:     app.services.futures_service:原始字段名: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']
+INFO:     app.services.futures_service:Upsert记录字段: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']
+INFO:     app.services.futures_service:Upsert使用字段: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']，主键要求: ['ts_code', 'trade_date']
+INFO:     app.services.futures_service:数据同步完成，表: futures.fut_daily，成功: 2000，失败: 0
+INFO:     app.services.futures_service:开始同步 fut_daily，表: futures.fut_daily，参数: {'exchange': 'CFFEX'}
+INFO:     app.services.futures_service:Tushare API fut_daily 返回 2000 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']
+INFO:     app.services.futures_service:日期字段 trade_date 格式转换完成
+INFO:     app.services.futures_service:数据转换完成，共 2000 条记录
+INFO:     app.services.futures_service:原始字段名: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']
+INFO:     app.services.futures_service:Upsert记录字段: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']
+INFO:     app.services.futures_service:Upsert使用字段: ['ts_code', 'trade_date', 'pre_close', 'pre_settle', 'open', 'high', 'low', 'close', 'settle', 'change1', 'change2', 'vol', 'amount', 'oi', 'oi_chg']，主键要求: ['ts_code', 'trade_date']
+INFO:     app.services.futures_service:数据同步完成，表: futures.fut_daily，成功: 2000，失败: 0
+INFO:     app.services.futures_service:开始同步 fut_weekly_monthly，表: futures.fut_weekly_monthly，参数: {'freq': 'week', 'exchange': 'CFFEX'}
+INFO:     app.services.futures_service:Tushare API fut_weekly_monthly 返回 6000 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['ts_code', 'trade_date', 'end_date', 'freq', 'open', 'high', 'low', 'close', 'pre_close', 'settle', 'pre_settle', 'vol', 'amount', 'oi', 'oi_chg', 'exchange', 'change1', 'change2']
+INFO:     app.services.futures_service:日期字段 trade_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 end_date 格式转换完成
+INFO:     app.services.futures_service:数据转换完成，共 6000 条记录
+INFO:     app.services.futures_service:原始字段名: ['ts_code', 'trade_date', 'end_date', 'freq', 'open', 'high', 'low', 'close', 'pre_close', 'settle', 'pre_settle', 'vol', 'amount', 'oi', 'oi_chg', 'exchange', 'change1', 'change2']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['ts_code', 'trade_date', 'end_date', 'freq', 'open', 'high', 'low', 'close', 'pre_close', 'settle', 'pre_settle', 'vol', 'amount', 'oi', 'oi_chg', 'exchange', 'change1', 'change2']
+INFO:     app.services.futures_service:Upsert记录字段: ['ts_code', 'trade_date', 'end_date', 'freq', 'open', 'high', 'low', 'close', 'pre_close', 'settle', 'pre_settle', 'vol', 'amount', 'oi', 'oi_chg', 'exchange', 'change1', 'change2']
+INFO:     app.services.futures_service:Upsert使用字段: ['ts_code', 'trade_date', 'end_date', 'freq', 'open', 'high', 'low', 'close', 'pre_close', 'settle', 'pre_settle', 'vol', 'amount', 'oi', 'oi_chg', 'exchange', 'change1', 'change2']，主键要求: ['ts_code', 'trade_date', 'freq']
+INFO:     app.services.futures_service:数据同步完成，表: futures.fut_weekly_monthly，成功: 6000，失败: 0
+INFO:     app.services.futures_service:开始同步 fut_basic，表: futures.fut_basic，参数: {'exchange': 'CFFEX'}
+INFO:     app.services.futures_service:Tushare API fut_basic 返回 680 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:日期字段 list_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 delist_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 last_ddate 格式转换完成
+INFO:     app.services.futures_service:数据转换完成，共 680 条记录
+INFO:     app.services.futures_service:原始字段名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert使用字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']，主键要求: ['ts_code']
+INFO:     app.services.futures_service:数据同步完成，表: futures.fut_basic，成功: 680，失败: 0
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:18:29.348750+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:19:04.478282+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:19:06.355304+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 AND "exchange" = :exchange ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'exchange': 'CFFEX', 'limit': 15, 'skip': 0}
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+psycopg.DataError: date too large (after year 10K): '48113-11-21'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\services\futures_service.py", line 201, in get_futures_list
+    for row in result:
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 527, in iterrows
+    for raw_row in self._fetchiter_impl():
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 2126, in _fetchiter_impl
+    row = fetchone(self, self.cursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1110, in fetchone
+    self.handle_exception(result, dbapi_cursor, e)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1081, in handle_exception
+    result.connection._handle_dbapi_exception(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+sqlalchemy.exc.DataError: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:19:29.798668+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:19:35.431551+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 AND "exchange" = :exchange ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'exchange': 'CFFEX', 'limit': 15, 'skip': 0}
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+psycopg.DataError: date too large (after year 10K): '48113-11-21'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\services\futures_service.py", line 201, in get_futures_list
+    for row in result:
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 527, in iterrows
+    for raw_row in self._fetchiter_impl():
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 2126, in _fetchiter_impl
+    row = fetchone(self, self.cursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1110, in fetchone
+    self.handle_exception(result, dbapi_cursor, e)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1081, in handle_exception
+    result.connection._handle_dbapi_exception(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+sqlalchemy.exc.DataError: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:20:21.555030+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:21:09.092832+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:21:11.136066+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:24:35.253120+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:24:37.025268+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 AND "exchange" = :exchange ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'exchange': 'CFFEX', 'limit': 15, 'skip': 0}
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+psycopg.DataError: date too large (after year 10K): '48113-11-21'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\services\futures_service.py", line 201, in get_futures_list
+    for row in result:
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 527, in iterrows
+    for raw_row in self._fetchiter_impl():
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 2126, in _fetchiter_impl
+    row = fetchone(self, self.cursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1110, in fetchone
+    self.handle_exception(result, dbapi_cursor, e)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1081, in handle_exception
+    result.connection._handle_dbapi_exception(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+sqlalchemy.exc.DataError: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 AND "exchange" = :exchange ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'exchange': 'CFFEX', 'limit': 15, 'skip': 0}
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+psycopg.DataError: date too large (after year 10K): '48113-11-21'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\services\futures_service.py", line 201, in get_futures_list
+    for row in result:
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 527, in iterrows
+    for raw_row in self._fetchiter_impl():
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 2126, in _fetchiter_impl
+    row = fetchone(self, self.cursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1110, in fetchone
+    self.handle_exception(result, dbapi_cursor, e)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1081, in handle_exception
+    result.connection._handle_dbapi_exception(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+sqlalchemy.exc.DataError: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+INFO:     app.services.futures_service:开始同步 fut_basic，表: futures.fut_basic，参数: {'exchange': 'DCE'}
+INFO:     app.services.futures_service:Tushare API fut_basic 返回 3126 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:日期字段 list_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 delist_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 last_ddate 格式转换完成
+INFO:     app.services.futures_service:数据转换完成，共 3126 条记录
+INFO:     app.services.futures_service:原始字段名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert使用字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']，主键要求: ['ts_code']
+INFO:     app.services.futures_service:数据同步完成，表: futures.fut_basic，成功: 3126，失败: 0
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+psycopg.DataError: date too large (after year 10K): '48113-11-21'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\services\futures_service.py", line 201, in get_futures_list
+    for row in result:
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 527, in iterrows
+    for raw_row in self._fetchiter_impl():
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 2126, in _fetchiter_impl
+    row = fetchone(self, self.cursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1110, in fetchone
+    self.handle_exception(result, dbapi_cursor, e)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1081, in handle_exception
+    result.connection._handle_dbapi_exception(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+sqlalchemy.exc.DataError: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+psycopg.DataError: date too large (after year 10K): '48113-11-21'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\services\futures_service.py", line 201, in get_futures_list
+    for row in result:
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 527, in iterrows
+    for raw_row in self._fetchiter_impl():
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 2126, in _fetchiter_impl
+    row = fetchone(self, self.cursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1110, in fetchone
+    self.handle_exception(result, dbapi_cursor, e)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1081, in handle_exception
+    result.connection._handle_dbapi_exception(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+sqlalchemy.exc.DataError: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:29:37 CST)" (scheduled at 2025-12-26 23:24:37.025268+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 23:24:37
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:29:37 CST)" executed successfully
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+INFO:     app.services.futures_service:Query returned 15 items
+INFO:     app.services.futures_service:Executing count query: SELECT COUNT(*) FROM futures.fut_basic WHERE 1=1
+INFO:     app.services.futures_service:Count params: {}
+INFO:     app.services.futures_service:Total count: 3718
+INFO:     app.services.futures_service:开始同步 fut_basic，表: futures.fut_basic，参数: {'exchange': 'CZCE'}
+INFO:     app.services.futures_service:Tushare API fut_basic 返回 2769 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:日期字段 list_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 delist_date 格式转换完成
+INFO:     app.services.futures_service:日期字段 last_ddate 格式转换完成
+INFO:     app.services.futures_service:数据转换完成，共 2769 条记录
+INFO:     app.services.futures_service:原始字段名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert使用字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']，主键要求: ['ts_code']
+INFO:     app.services.futures_service:数据同步完成，表: futures.fut_basic，成功: 2769，失败: 0
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:33:14.487844+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+ERROR:     app.services.futures_service:Query failed for futures.fut_basic: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+psycopg.DataError: date too large (after year 10K): '48113-11-21'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\finance\api\backend\app\services\futures_service.py", line 201, in get_futures_list
+    for row in result:
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 527, in iterrows
+    for raw_row in self._fetchiter_impl():
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 2126, in _fetchiter_impl
+    row = fetchone(self, self.cursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1110, in fetchone
+    self.handle_exception(result, dbapi_cursor, e)
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1081, in handle_exception
+    result.connection._handle_dbapi_exception(
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\finance\api\backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py", line 1105, in fetchone
+    row = dbapi_cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\finance\api\backend\.venv\Lib\site-packages\psycopg\cursor.py", line 191, in fetchone
+    record = self._tx.load_row(self._pos, self._make_row)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "psycopg_binary\\_psycopg/transform.pyx", line 522, in psycopg_binary._psycopg.Transformer.load_row
+  File "psycopg_binary\\types/datetime.pyx", line 399, in psycopg_binary._psycopg.DateLoader.cload
+  File "psycopg_binary\\types/datetime.pyx", line 391, in psycopg_binary._psycopg.DateLoader._error_date
+sqlalchemy.exc.DataError: (psycopg.DataError) date too large (after year 10K): '48113-11-21'
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-26 23:33:47.713379+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.services.futures_service:开始同步 fut_basic，表: futures.fut_basic，参数: {}
+INFO:     app.services.futures_service:Tushare API fut_basic 返回 10000 条记录
+INFO:     app.services.futures_service:DataFrame 列名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:日期字段 list_date 格式转换完成，共 10000 条有效记录
+INFO:     app.services.futures_service:日期字段 delist_date 格式转换完成，共 10000 条有效记录
+WARNING:     app.services.futures_service:日期字段 last_ddate 转换完成，有效: 9927, 无效: 73
+INFO:     app.services.futures_service:数据转换完成，共 10000 条记录
+INFO:     app.services.futures_service:原始字段名: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:未提供字段映射，使用原始字段名。记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert记录字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']
+INFO:     app.services.futures_service:Upsert使用字段: ['ts_code', 'symbol', 'exchange', 'name', 'fut_code', 'multiplier', 'trade_unit', 'per_unit', 'quote_unit', 'quote_unit_desc', 'd_mode_desc', 'list_date', 'delist_date', 'd_month', 'last_ddate']，主键要求: ['ts_code']
+INFO:     app.services.futures_service:数据同步完成，表: futures.fut_basic，成功: 10000，失败: 0
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+INFO:     app.services.futures_service:Query returned 15 items
+INFO:     app.services.futures_service:Executing count query: SELECT COUNT(*) FROM futures.fut_basic WHERE 1=1
+INFO:     app.services.futures_service:Count params: {}
+INFO:     app.services.futures_service:Total count: 10235
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:38:47 CST)" (scheduled at 2025-12-26 23:33:47.713379+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 23:33:47
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:38:47 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:43:47 CST)" (scheduled at 2025-12-26 23:38:47.713379+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 23:38:47
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:43:47 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:48:47 CST)" (scheduled at 2025-12-26 23:43:47.713379+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 23:43:47
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:48:47 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:53:47 CST)" (scheduled at 2025-12-26 23:48:47.713379+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 23:48:47
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:53:47 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:58:47 CST)" (scheduled at 2025-12-26 23:53:47.713379+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-26 23:53:47
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-26 23:58:47 CST)" executed successfully
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+INFO:     app.services.futures_service:Query returned 15 items
+INFO:     app.services.futures_service:Executing count query: SELECT COUNT(*) FROM futures.fut_basic WHERE 1=1
+INFO:     app.services.futures_service:Count params: {}
+INFO:     app.services.futures_service:Total count: 10235
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+INFO:     app.services.futures_service:Query returned 15 items
+INFO:     app.services.futures_service:Executing count query: SELECT COUNT(*) FROM futures.fut_basic WHERE 1=1
+INFO:     app.services.futures_service:Count params: {}
+INFO:     app.services.futures_service:Total count: 10235
+WARNING:     passlib.handlers.bcrypt:(trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\finance\api\backend\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-27 00:02:40.089966+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-27 00:03:07.251787+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-27 00:03:09.397840+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-27 00:04:09.653946+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-27 00:04:11.478124+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-27 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2025-12-29 09:00:00+08:00)

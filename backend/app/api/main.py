@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.routes import items, login, menu, private, roles, scheduler, users, utils, polarization, etf, fund, index, user_config, stock, macro, futures
+from app.api.routes import items, login, menu, private, roles, scheduler, users, utils, polarization, etf, fund, index, user_config, stock, macro, futures, spot
 from app.core.config import settings
 
 api_router = APIRouter()
@@ -17,6 +17,7 @@ api_router.include_router(index.router)
 api_router.include_router(stock.router)
 api_router.include_router(macro.router)
 api_router.include_router(futures.router)
+api_router.include_router(spot.router)
 api_router.include_router(scheduler.router)
 api_router.include_router(user_config.router)
 
