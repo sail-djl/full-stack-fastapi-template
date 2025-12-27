@@ -135,21 +135,23 @@ def get_stock_daily(
     trade_date: str | None = None,
     start_date: str | None = None,
     end_date: str | None = None,
+    skip: int = 0,
     limit: int = 1000,
 ) -> Any:
     """
     获取A股日线行情列表
     支持单个 ts_code 或多个 ts_code（逗号分隔）
     """
-    items = StockService.get_stock_daily_list(
+    items, total = StockService.get_stock_daily_list(
         session=session,
         ts_code=ts_code,
         trade_date=trade_date,
         start_date=start_date,
         end_date=end_date,
+        skip=skip,
         limit=limit,
     )
-    return {"data": items}
+    return {"data": items, "count": total}
 
 
 @router.get("/dailybasic")
@@ -407,7 +409,6 @@ def get_stock_business(
     period: str | None = None,
     start_date: str | None = None,
     end_date: str | None = None,
-    type: str | None = None,
 ) -> Any:
     """
     获取主营业务构成列表
@@ -421,7 +422,6 @@ def get_stock_business(
         period=period,
         start_date=start_date,
         end_date=end_date,
-        type=type,
     )
     return {"data": items, "count": total}
 
@@ -473,7 +473,14 @@ def _upsert_records(session: Session, table: str, records: List[dict], primary_k
     keys = [k for k in first_keys if k not in ['id', 'update_time', 'create_time']]
     
     if not all(pk in keys for pk in primary_keys):
-        logger.error(f"Upsert failed: Missing primary keys {primary_keys}")
+        missing_keys = [pk for pk in primary_keys if pk not in keys]
+        logger.error(
+            f"Upsert failed: Missing primary keys. "
+            f"Required: {primary_keys}, "
+            f"Missing: {missing_keys}, "
+            f"Available fields: {keys}, "
+            f"Table: {table}"
+        )
         return 0, len(records)
 
     # 处理日期格式 (YYYYMMDD -> YYYY-MM-DD)
@@ -481,7 +488,7 @@ def _upsert_records(session: Session, table: str, records: List[dict], primary_k
     for r in records:
         new_r = {k: r.get(k) for k in keys}
         # 处理 trade_date 或类似日期字段
-        for date_key in ['trade_date', 'nav_date', 'in_date', 'out_date', 'base_date', 'list_date', 'exp_date', 'delist_date', 'setup_date']:
+        for date_key in ['trade_date', 'nav_date', 'in_date', 'out_date', 'base_date', 'list_date', 'exp_date', 'delist_date', 'setup_date', 'end_date', 'ann_date', 'actual_date', 'pre_date', 'ipo_date', 'issue_date']:
             if date_key in new_r:
                 td = new_r.get(date_key)
                 if isinstance(td, str) and len(td) == 8:
@@ -531,7 +538,7 @@ def _upsert_records(session: Session, table: str, records: List[dict], primary_k
                     session.commit()
                     success += 1
                 except Exception as e2:
-                    logger.error(f"Upsert single failed: {e2}")
+                    logger.error(f"Upsert single failed: {e2}\n{traceback.format_exc()}")
                     session.rollback()
                     failed += 1
                     
@@ -816,7 +823,6 @@ class StockBusinessSyncPayload(BaseModel):
     period: str | None = None
     start_date: str | None = None
     end_date: str | None = None
-    type: str | None = None
 
 
 @router.post("/business/sync")
@@ -852,8 +858,6 @@ def sync_stock_business(session: SessionDep, payload: StockBusinessSyncPayload) 
                 params["start_date"] = payload.start_date
             if payload.end_date:
                 params["end_date"] = payload.end_date
-            if payload.type:
-                params["type"] = payload.type
 
             logger.info(f"Fetching fina_mainbz for {ts_code} with params: {params}")
             df = pro.fina_mainbz(**params)
@@ -861,7 +865,16 @@ def sync_stock_business(session: SessionDep, payload: StockBusinessSyncPayload) 
             if df is not None and not df.empty:
                 df = df.where(pd.notnull(df), None)
                 rows = df.to_dict("records")
-                succ, fail = _upsert_records(session, "stock.fina_mainbz", rows, ["ts_code", "end_date", "bz_item", "type"])
+                
+                # 过滤掉数据库表中不存在的字段（如 bz_code）
+                # 数据库表字段：ts_code, end_date, bz_item, bz_sales, bz_profit, bz_cost, curr_type, update_flag
+                allowed_fields = ['ts_code', 'end_date', 'bz_item', 'bz_sales', 'bz_profit', 'bz_cost', 'curr_type', 'update_flag']
+                filtered_rows = []
+                for row in rows:
+                    filtered_row = {k: v for k, v in row.items() if k in allowed_fields}
+                    filtered_rows.append(filtered_row)
+                
+                succ, fail = _upsert_records(session, "stock.fina_mainbz", filtered_rows, ["ts_code", "end_date", "bz_item"])
                 total_success += succ
                 total_failed += fail
         except Exception as e:
