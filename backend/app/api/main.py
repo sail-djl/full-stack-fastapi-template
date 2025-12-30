@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 
 from app.api.routes import items, login, menu, private, roles, scheduler, users, utils, polarization, etf, fund, index, user_config, stock, macro, futures, spot, option, bond, forex, us_stock
+from app.modules import sysconfig
 from app.core.config import settings
 
 api_router = APIRouter()
@@ -24,6 +25,7 @@ api_router.include_router(forex.router)
 api_router.include_router(us_stock.router)
 api_router.include_router(scheduler.router)
 api_router.include_router(user_config.router)
+api_router.include_router(sysconfig.router)
 
 
 if settings.ENVIRONMENT == "local":
