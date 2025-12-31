@@ -1,0 +1,556 @@
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:05:54 CST)" (scheduled at 2025-12-31 00:00:54.182922+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:00:54
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:05:54 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:10:54 CST)" (scheduled at 2025-12-31 00:05:54.182922+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:05:54
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:10:54 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:15:54 CST)" (scheduled at 2025-12-31 00:10:54.182922+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:10:54
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:15:54 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:20:54 CST)" (scheduled at 2025-12-31 00:15:54.182922+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:15:54
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:20:54 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:25:54 CST)" (scheduled at 2025-12-31 00:20:54.182922+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:20:54
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:25:54 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:30:54 CST)" (scheduled at 2025-12-31 00:25:54.182922+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:25:54
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:30:54 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-31 00:31:19.645836+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-31 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2026-01-05 09:00:00+08:00)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:36:19 CST)" (scheduled at 2025-12-31 00:31:19.645836+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:31:19
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:36:19 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-31 00:39:24.234522+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-31 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2026-01-05 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-31 00:41:16.985304+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-31 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2026-01-05 09:00:00+08:00)
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-31 00:42:34.097735+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2025-12-31 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2026-01-05 09:00:00+08:00)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:47:34 CST)" (scheduled at 2025-12-31 00:42:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:42:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:47:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:52:34 CST)" (scheduled at 2025-12-31 00:47:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:47:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:52:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:57:34 CST)" (scheduled at 2025-12-31 00:52:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:52:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 00:57:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 01:02:34 CST)" (scheduled at 2025-12-31 00:57:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 00:57:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 01:02:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 01:07:34 CST)" (scheduled at 2025-12-31 01:02:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 01:02:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 01:07:34 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 10:42:34 CST)" was missed by 0:03:51.763064
+WARNING:     apscheduler.executors.default:Run time of job "每日定时任务 (trigger: cron[hour='2', minute='0'], next run at: 2026-01-01 02:00:00 CST)" was missed by 8:41:25.921530
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 10:47:34 CST)" (scheduled at 2025-12-31 10:42:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 10:42:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 10:47:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 10:52:34 CST)" (scheduled at 2025-12-31 10:47:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 10:47:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 10:52:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 10:57:34 CST)" (scheduled at 2025-12-31 10:52:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 10:52:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 10:57:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 11:02:34 CST)" (scheduled at 2025-12-31 10:57:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 10:57:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 11:02:34 CST)" executed successfully
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 14:42:34 CST)" was missed by 0:03:28.829218
+WARNING:     apscheduler.executors.default:Run time of job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:32:34 CST)" was missed by 0:00:09.396566
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:37:34 CST)" (scheduled at 2025-12-31 21:32:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 21:32:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:37:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:42:34 CST)" (scheduled at 2025-12-31 21:37:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 21:37:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:42:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:47:34 CST)" (scheduled at 2025-12-31 21:42:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 21:42:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:47:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:52:34 CST)" (scheduled at 2025-12-31 21:47:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 21:47:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:52:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:57:34 CST)" (scheduled at 2025-12-31 21:52:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 21:52:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 21:57:34 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:02:34 CST)" (scheduled at 2025-12-31 21:57:34.097735+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 21:57:34
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:02:34 CST)" executed successfully
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已关闭
+INFO:     apscheduler.scheduler:Scheduler has been shut down
+INFO:     apscheduler.scheduler:Scheduler started
+INFO:     app.scheduler.scheduler:✅ 定时任务调度器已启动
+INFO:     apscheduler.scheduler:Added job "每日定时任务" to job store "default"
+INFO:     apscheduler.scheduler:Added job "间隔任务（每5分钟）" to job store "default"
+INFO:     apscheduler.scheduler:Added job "每周任务（周一9点）" to job store "default"
+INFO:     app.scheduler.scheduler:✅ 已注册 3 个定时任务
+INFO:     app.scheduler.scheduler:  - interval_task: 间隔任务（每5分钟） (下次执行: 2025-12-31 22:02:48.332290+08:00)
+INFO:     app.scheduler.scheduler:  - daily_task: 每日定时任务 (下次执行: 2026-01-01 02:00:00+08:00)
+INFO:     app.scheduler.scheduler:  - weekly_task: 每周任务（周一9点） (下次执行: 2026-01-05 09:00:00+08:00)
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:07:48 CST)" (scheduled at 2025-12-31 22:02:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:02:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:07:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:12:48 CST)" (scheduled at 2025-12-31 22:07:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:07:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:12:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:17:48 CST)" (scheduled at 2025-12-31 22:12:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:12:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:17:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:22:48 CST)" (scheduled at 2025-12-31 22:17:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:17:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:22:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:27:48 CST)" (scheduled at 2025-12-31 22:22:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:22:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:27:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:32:48 CST)" (scheduled at 2025-12-31 22:27:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:27:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:32:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:37:48 CST)" (scheduled at 2025-12-31 22:32:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:32:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:37:48 CST)" executed successfully
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:42:48 CST)" (scheduled at 2025-12-31 22:37:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:37:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:42:48 CST)" executed successfully
+INFO:     app.api.routes.index:Sync index_daily request received. Payload: ts_code='000001.SH,000009.SH,000010.SH,000016.SH,000032.SH,000033.SH,000034.SH,000035.SH,000036.SH,000037.SH,000038.SH,000039.SH,000040.SH,000041.SH,000042.SH,000044.SH,000045.SH,000046.SH,000047.SH,000049.SH' start_date='2015-12-31' end_date='2025-12-31'
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000001.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000009.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000010.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000016.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000032.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000033.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000034.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000035.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000036.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000037.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000038.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000039.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000040.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000041.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000042.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000044.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000045.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000046.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000047.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20151231 - 20161230
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20161231 - 20171231
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20180101 - 20190101
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20190102 - 20200102
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20200103 - 20210102
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20210103 - 20220103
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20220104 - 20230104
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20230105 - 20240105
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20240106 - 20250105
+INFO:     app.api.routes.index:Fetching index_daily for 000049.SH, range: 20250106 - 20251231
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.services.spot_service:Executing query: SELECT * FROM spot.sge_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.spot_service:Query params: {'limit': 15, 'skip': 0}
+INFO:     app.services.spot_service:Query returned 13 items
+INFO:     app.services.spot_service:Executing count query: SELECT COUNT(*) FROM spot.sge_basic WHERE 1=1
+INFO:     app.services.spot_service:Count params: {}
+INFO:     app.services.spot_service:Total count: 13
+INFO:     app.services.spot_service:Executing query: SELECT * FROM spot.sge_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.spot_service:Query params: {'limit': 15, 'skip': 0}
+INFO:     app.services.spot_service:Query returned 13 items
+INFO:     app.services.spot_service:Executing count query: SELECT COUNT(*) FROM spot.sge_basic WHERE 1=1
+INFO:     app.services.spot_service:Count params: {}
+INFO:     app.services.spot_service:Total count: 13
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+INFO:     app.services.futures_service:Query returned 15 items
+INFO:     app.services.futures_service:Executing count query: SELECT COUNT(*) FROM futures.fut_basic WHERE 1=1
+INFO:     app.services.futures_service:Count params: {}
+INFO:     app.services.futures_service:Total count: 10235
+INFO:     app.services.futures_service:Executing query: SELECT * FROM futures.fut_basic WHERE 1=1 ORDER BY list_date DESC LIMIT :limit OFFSET :skip
+INFO:     app.services.futures_service:Query params: {'limit': 15, 'skip': 0}
+INFO:     app.services.futures_service:Query returned 15 items
+INFO:     app.services.futures_service:Executing count query: SELECT COUNT(*) FROM futures.fut_basic WHERE 1=1
+INFO:     app.services.futures_service:Count params: {}
+INFO:     app.services.futures_service:Total count: 10235
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.233, 'changePercent': -2.0651, 'navDate': '2025-12-18'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=-2.0651, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.233, type=<class 'float'>
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:47:48 CST)" (scheduled at 2025-12-31 22:42:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:42:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:47:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:52:48 CST)" (scheduled at 2025-12-31 22:47:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:47:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:52:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:57:48 CST)" (scheduled at 2025-12-31 22:52:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:52:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 22:57:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:02:48 CST)" (scheduled at 2025-12-31 22:57:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 22:57:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:02:48 CST)" executed successfully
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2015-12-31' end_date='2025-12-31' keyword='013286.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Found 1 funds to sync.
+INFO:     app.api.routes.fund:Fetching fund_nav for 013286.OF, range: 20151231-20251231
+INFO:     app.api.routes.fund:Tushare returned 1082 records for 013286.OF
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (1082) for 013286.OF --------------
+INFO:     app.api.routes.fund:Upsert Summary for 013286.OF: Success=1082, Failed=0
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:07:48 CST)" (scheduled at 2025-12-31 23:02:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:02:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:07:48 CST)" executed successfully
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2025-11-30' end_date='2025-12-31' keyword='001593.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Found 1 funds to sync.
+INFO:     app.api.routes.fund:Fetching fund_nav for 001593.OF, range: 20251130-20251231
+INFO:     app.api.routes.fund:Tushare returned 22 records for 001593.OF
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (22) for 001593.OF --------------
+INFO:     app.api.routes.fund:Upsert Summary for 001593.OF: Success=22, Failed=0
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-24', 'deviation': -0.3126, 'etf1PctChg': 0.4197, 'etf2PctChg': 0.7323}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4197, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.7323, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-24', 'deviation': -0.3126, 'etf1PctChg': 0.4197, 'etf2PctChg': 0.7323}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4197, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.7323, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.2842, 'changePercent': 0.6111, 'navDate': '2025-12-30'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=0.6111, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.2842, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.2842, 'changePercent': 0.6111, 'navDate': '2025-12-30'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=0.6111, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.2842, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-01', 'deviation': nan, 'etf1PctChg': 0.5848, 'etf2PctChg': nan}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.5848, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=nan, type=<class 'float'>
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2024-12-31' end_date='2025-12-31' keyword='013286.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Found 1 funds to sync.
+INFO:     app.api.routes.fund:Fetching fund_nav for 013286.OF, range: 20241231-20251231
+INFO:     app.api.routes.fund:Tushare returned 254 records for 013286.OF
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (254) for 013286.OF --------------
+INFO:     app.api.routes.fund:Upsert Summary for 013286.OF: Success=254, Failed=0
+INFO:     app.api.routes.fund:Sync request received. Payload: start_date='2024-12-31' end_date='2025-12-31' keyword='001593.OF' market=None status=None fund_type=None management=None
+INFO:     app.api.routes.fund:Found 1 funds to sync.
+INFO:     app.api.routes.fund:Fetching fund_nav for 001593.OF, range: 20241231-20251231
+INFO:     app.api.routes.fund:Tushare returned 253 records for 001593.OF
+INFO:     app.api.routes.fund:-------------- Sync Data Batch (253) for 001593.OF --------------
+INFO:     app.api.routes.fund:Upsert Summary for 001593.OF: Success=253, Failed=0
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-24', 'deviation': -0.3126, 'etf1PctChg': 0.4197, 'etf2PctChg': 0.7323}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4197, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.7323, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-24', 'deviation': -0.3126, 'etf1PctChg': 0.4197, 'etf2PctChg': 0.7323}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.4197, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.7323, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.2842, 'changePercent': 0.6111, 'navDate': '2025-12-30'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=0.6111, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.2842, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: 001593.OF data: {'code': '001593.OF', 'name': '天弘创业板ETF联接C', 'price': 1.2842, 'changePercent': 0.6111, 'navDate': '2025-12-30'}
+INFO:     app.api.routes.polarization:🔍 Backend: changePercent=0.6111, type=<class 'float'>
+INFO:     app.api.routes.polarization:🔍 Backend: price=1.2842, type=<class 'float'>
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:12:48 CST)" (scheduled at 2025-12-31 23:07:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:07:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:12:48 CST)" executed successfully
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-12-01', 'deviation': -0.6523, 'etf1PctChg': 0.5848, 'etf2PctChg': 1.2371}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=0.5848, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=1.2371, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: sample data keys: dict_keys(['date', 'deviation', 'etf1PctChg', 'etf2PctChg'])
+INFO:     app.api.routes.polarization:Backend Deviation: sample data: {'date': '2025-10-09', 'deviation': 0.4837, 'etf1PctChg': 1.1702, 'etf2PctChg': 0.6865}
+INFO:     app.api.routes.polarization:Backend Deviation: etf1PctChg=1.1702, type=<class 'float'>
+INFO:     app.api.routes.polarization:Backend Deviation: etf2PctChg=0.6865, type=<class 'float'>
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:17:48 CST)" (scheduled at 2025-12-31 23:12:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:12:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:17:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:22:48 CST)" (scheduled at 2025-12-31 23:17:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:17:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:22:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:27:48 CST)" (scheduled at 2025-12-31 23:22:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:22:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:27:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:32:48 CST)" (scheduled at 2025-12-31 23:27:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:27:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:32:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:37:48 CST)" (scheduled at 2025-12-31 23:32:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:32:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:37:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:42:48 CST)" (scheduled at 2025-12-31 23:37:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:37:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:42:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:47:48 CST)" (scheduled at 2025-12-31 23:42:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:42:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:47:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:52:48 CST)" (scheduled at 2025-12-31 23:47:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:47:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:52:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:57:48 CST)" (scheduled at 2025-12-31 23:52:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:52:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2025-12-31 23:57:48 CST)" executed successfully
+INFO:     apscheduler.executors.default:Running job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2026-01-01 00:02:48 CST)" (scheduled at 2025-12-31 23:57:48.332290+08:00)
+INFO:     app.scheduler.jobs.example_job:🔄 执行间隔任务 - 2025-12-31 23:57:48
+INFO:     app.scheduler.jobs.example_job:✅ 间隔任务执行完成
+INFO:     apscheduler.executors.default:Job "间隔任务（每5分钟） (trigger: interval[0:05:00], next run at: 2026-01-01 00:02:48 CST)" executed successfully
