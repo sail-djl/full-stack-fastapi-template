@@ -12,6 +12,7 @@ from app.models import (
     RolesPublic,
     RoleUpdate,
 )
+from app.services.permission_service import PermissionService
 from app.services.role_service import RoleService
 
 router = APIRouter(prefix="/roles", tags=["roles"])
@@ -82,7 +83,7 @@ def get_role_permissions(role_id: uuid.UUID, session: SessionDep) -> Any:
     """
     获取角色的所有权限
     """
-    permissions = RoleService.get_role_permissions(session=session, role_id=role_id)
+    permissions = PermissionService.get_role_permissions(session=session, role_id=role_id)
     return [PermissionPublic.model_validate(p) for p in permissions]
 
 
@@ -99,7 +100,7 @@ def assign_permissions_to_role(
     """
     为角色分配权限（替换所有现有权限）
     """
-    RoleService.assign_permissions_to_role(
+    PermissionService.assign_permissions_to_role(
         session=session, role_id=role_id, permission_ids=permission_ids
     )
     return Message(message="Permissions assigned successfully")
@@ -118,7 +119,7 @@ def assign_permission_to_role(
     """
     为角色添加单个权限
     """
-    RoleService.assign_permission_to_role(
+    PermissionService.assign_permission_to_role(
         session=session, role_id=role_id, permission_id=permission_id
     )
     return Message(message="Permission assigned successfully")
@@ -137,7 +138,8 @@ def remove_permission_from_role(
     """
     从角色移除权限
     """
-    RoleService.remove_permission_from_role(
+    PermissionService.remove_permission_from_role(
         session=session, role_id=role_id, permission_id=permission_id
     )
     return Message(message="Permission removed successfully")
+

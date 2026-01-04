@@ -199,3 +199,4 @@ def remove_role_from_user(
     """
     UserService.remove_role_from_user(session=session, user_id=user_id, role_id=role_id)
     return Message(message="Role removed successfully")
+

@@ -81,3 +81,4 @@ def delete_permission_api(
     """
     PermissionService.delete_permission(session=session, permission_id=id)
     return Message(message="Permission deleted successfully")
+
